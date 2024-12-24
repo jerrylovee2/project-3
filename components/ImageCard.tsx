@@ -8,9 +8,9 @@ interface ImageCardProps {
 
 const ImageCard: React.FC<ImageCardProps> = ({ title, image, size }) => {
   const sizeClasses = {
-    small: 'w-[200px] h-[300px]',
-    medium: 'w-[200px] h-[400px]',
-    large: 'w-[400px] h-[500px]'
+    small: 'w-[150px] h-[200px] md:w-[200px] md:h-[300px]',
+    medium: 'w-[150px] h-[250px] md:w-[200px] md:h-[400px]',
+    large: 'w-[250px] h-[300px] md:w-[400px] md:h-[500px]'
   };
 
   return (

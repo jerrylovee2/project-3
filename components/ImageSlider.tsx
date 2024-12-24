@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageCard from './ImageCard';
 import NavigationButton from './NavigationButton';
 
@@ -32,6 +32,17 @@ const slides = [
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
@@ -58,23 +69,29 @@ const ImageSlider = () => {
         </p>
         
         <div className="flex items-center justify-center gap-6">
-          <div className="mt-12">
-            <ImageCard {...slides[currentIndex]} size="small" />
-          </div>
-          
-          <div className="mt-6">
-            <ImageCard {...slides[(currentIndex + 1) % slides.length]} size="medium" />
-          </div>
-          
-          <ImageCard {...slides[(currentIndex + 2) % slides.length]} size="large" />
-          
-          <div className="mt-6">
-            <ImageCard {...slides[(currentIndex + 3) % slides.length]} size="medium" />
-          </div>
-          
-          <div className="mt-12">
-            <ImageCard {...slides[(currentIndex + 4) % slides.length]} size="small" />
-          </div>
+          {isMobile ? (
+            <ImageCard {...slides[currentIndex]} size="large" />
+          ) : (
+            <>
+              <div className="mt-12">
+                <ImageCard {...slides[currentIndex]} size="small" />
+              </div>
+              
+              <div className="mt-6">
+                <ImageCard {...slides[(currentIndex + 1) % slides.length]} size="medium" />
+              </div>
+              
+              <ImageCard {...slides[(currentIndex + 2) % slides.length]} size="large" />
+              
+              <div className="mt-6">
+                <ImageCard {...slides[(currentIndex + 3) % slides.length]} size="medium" />
+              </div>
+              
+              <div className="mt-12">
+                <ImageCard {...slides[(currentIndex + 4) % slides.length]} size="small" />
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>
