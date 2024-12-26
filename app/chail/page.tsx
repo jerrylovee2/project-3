@@ -4,10 +4,16 @@ import Navbar from "@/components/Navbar";
 import AmenitiesGrid from "@/components/AmenitiesGrid";
 import Testimonials from "@/components/Testimonials";
 import VisualTour from "@/components/VisualTour";
-import ContactForm from "@/components/ContactForm";
+// import ContactForm from "@/components/ContactForm";
 import Attractions from "@/components/Attractions";
+import ScenicPreview from "@/components/preview";
+import ImageSlider from "@/components/ImageSlider";
+import ContactForm from "@/components/newform";
+import ImageSection from "@/components/Imagesection";
+import HeroSection from "@/components/Herosection";
+import LuxurySection from "@/components/Luxary";
 
-export default function Chail() {
+export default function chail() {
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -16,63 +22,51 @@ export default function Chail() {
       <section className="relative h-[70vh] pt-16">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e"
-            alt="Chail View"
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+            alt="chail View"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
-            Plan. Stay. Explore.
+            The Hills. The Calm. The Charm.
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-2xl">
-            All in One Place
+            All Together.
           </p>
         </div>
       </section>
 
       {/* Welcome Text */}
-      <section className="py-16 px-4">
+      {/* <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-green-600 mb-6">
-            Relax, Recharge, and Reconnect in Chail
+            Escape to Quiet, Comfort, and Beauty in chail
           </h2>
           <p className="text-gray-700">
-            Nestled in the heart of Chail, our hotel offers a peaceful sanctuary surrounded by nature's beauty. 
-            With spacious rooms, impeccable service, and panoramic views of the majestic Himalayas, 
-            we promise an unforgettable blend of relaxation and adventure. Discover the allure of Chail 
-            and create lasting memories in this serene haven.
+            Set in the tranquil hills of chail, our hotel combines modern luxury with natural beauty.
+            Each stay promises not just accommodation, but an experience where comfort meets stunning
+            mountain vistas. Let us be your gateway to the serene Himalayas.
           </p>
         </div>
-      </section>
+      </section> */}
 
-      {/* Room Preview */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-green-600 mb-8">
-            A Luxurious & Cozy Retreat
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <img
-              src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461"
-              alt="Luxury Room"
-              className="rounded-lg shadow-lg"
-            />
-            <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-4">Deluxe Mountain View Rooms</h3>
-              <p className="text-gray-600 mb-6">
-                Experience comfort and luxury with panoramic mountain views.
-                Our rooms blend modern amenities with traditional charm.
-              </p>
-              <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors w-fit">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <HeroSection />
+      
+      <ImageSection 
+        src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80"
+        alt="Scenic mountain view from hotel"
+      />
+      
+      <LuxurySection />
+      
+      <ImageSection 
+        src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80"
+        alt="Luxury hotel room"
+        showExploreButton
+      />
+   
       {/* Amenities */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -82,40 +76,27 @@ export default function Chail() {
 
       {/* Testimonials */}
       <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className=" mx-auto">
           <Testimonials />
         </div>
       </section>
 
+
       {/* Visual Tour */}
-      <section className="py-16 px-4 bg-gray-50">
+      {/* <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <VisualTour />
         </div>
-      </section>
-
+      </section> */}
+      
+      <ImageSlider/>
+      
       {/* Attractions */}
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="">
         <Attractions location="chail" />
       </div>
-
-      {/* Contact Form */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="h-[400px] bg-gray-200 rounded-lg overflow-hidden">
-            {/* Map placeholder */}
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.5762436193636!2d77.19790931511566!3d30.967144981562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f85e90d5fec8f%3A0x7e1b5b0c5c2c5f0a!2sChail%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1620147647729!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-          <ContactForm />
-        </div>
-      </section>
+    
+      <ContactForm/>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
