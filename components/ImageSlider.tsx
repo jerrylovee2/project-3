@@ -60,7 +60,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 px-4 py-8">
+    <div className="h-[800px] bg-gray-100 px-4 py-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-4xl font-bold text-green-700">Our Scenic Preview</h1>
