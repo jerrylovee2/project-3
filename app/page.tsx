@@ -132,7 +132,11 @@ export default function Home() {
               <ul>
                 <li className="mb-2">Cancellations and Refund</li>
                 <li className="mb-2">Terms and Conditions</li>
-                <li>Privacy Policy</li>
+                <li>
+                  <Link href="/privacy">
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
