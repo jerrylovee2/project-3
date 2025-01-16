@@ -73,7 +73,7 @@ export default function TestimonialSlider() {
           }}
         >
           <CarouselContent className="-ml-2 md:-ml-4">
-            {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => ( 
               <CarouselItem key={testimonial.id} className={`pl-2 md:pl-4 md:basis-1/3 ${index === 0 || index === 2 ? 'w-[200px] h-[300px]' : ''}`}>
                 <div className="p-1">
                   <Card className="relative overflow-hidden rounded-xl border-0 h-[400px]">

@@ -5,12 +5,13 @@ import { MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
+import NavbarMain from "@/components/Navbarmain";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* <Navbar /> */}
-
+      <NavbarMain/>
       {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
