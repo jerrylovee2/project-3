@@ -111,6 +111,11 @@ export default function TermsAndConditions() {
           </div>
         </section>
       </div>
+      <p className=" h-[10vh] text-lg font-serif text-white text-center py-6 bg-emerald-500">
+        
+    Thank you for trusting Hadley Inn. Your privacy is important to us, and we are committed to ensuring 
+    that your experience with us is secure and enjoyable.
+      </p>
       </>
     )
   }
