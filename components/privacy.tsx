@@ -1,9 +1,11 @@
 export default function TermsAndConditions() {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8" style={{paddingTop:'20px'}}>
+        <>
         <h1 className="text-3xl font-serif text-white text-center py-6 bg-emerald-500 mb-8">
-          Terms and Conditions
-        </h1>
+        Terms and Conditions
+      </h1>
+      <div className="max-w-4xl mx-auto px-4 py-8" style={{paddingTop:'20px'}}>
+       
   
         <section className="space-y-8">
           <div>
@@ -109,6 +111,7 @@ export default function TermsAndConditions() {
           </div>
         </section>
       </div>
+      </>
     )
   }
   
