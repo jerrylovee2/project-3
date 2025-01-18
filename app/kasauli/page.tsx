@@ -1,5 +1,4 @@
 "use client";
-
 import Navbar from "@/components/Navbar";
 import AmenitiesGrid from "@/components/AmenitiesGrid";
 import Testimonials from "@/components/Testimonials";

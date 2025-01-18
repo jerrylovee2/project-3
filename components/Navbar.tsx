@@ -17,9 +17,6 @@ const navigation = [
       { name: 'kasuali 2', href: 'kasuali' },
     ],
   },
-  { name: 'Property', href: '#' },
-  { name: 'Gallery', href: '#' },
-  { name: 'Travel Guide', href:'#' },
   { name: 'Contact', href: '#' },
 ]
 
@@ -55,7 +52,7 @@ export default function Navbar() {
 
                   {item.children && (
                     <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                      <div className="py-1 z-10 relateive bg-white opacity-80">
+                      <div className="py-1 z-10 relateive bg-white opacity-100">
                         {item.children.map((child) => (
                           <Link
                             key={child.name}
