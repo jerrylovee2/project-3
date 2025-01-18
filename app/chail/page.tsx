@@ -22,11 +22,11 @@ export default function chail() {
       <section className="relative h-[70vh] pt-16">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+            src="/chail1.png"
             alt="chail View"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0" />
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
@@ -55,14 +55,14 @@ export default function chail() {
       <HeroSection />
       
       <ImageSection 
-        src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80"
+        src="/chail2.png"
         alt="Scenic mountain view from hotel"
       />
       
       <LuxurySection />
       
       <ImageSection 
-        src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80"
+        src="/chail3.png"
         alt="Luxury hotel room"
         showExploreButton
       />

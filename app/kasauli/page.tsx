@@ -11,6 +11,7 @@ import ContactForm from "@/components/newform";
 import ImageSection from "@/components/Imagesection";
 import HeroSection from "@/components/Herosection";
 import LuxurySection from "@/components/Luxary";
+import ThreeCardSlider from "@/components/threeCardslider";
 
 export default function Kasauli() {
   return (
@@ -21,11 +22,11 @@ export default function Kasauli() {
       <section className="relative h-[70vh] pt-16">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+            src="/kasaul1.png"
             alt="Kasauli View"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0" />
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
@@ -54,17 +55,21 @@ export default function Kasauli() {
       <HeroSection />
       
       <ImageSection 
-        src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80"
+        src="/kasual2.png"
         alt="Scenic mountain view from hotel"
       />
       
       <LuxurySection />
       
-      <ImageSection 
+      <ThreeCardSlider/>
+
+      {/* <ImageSection 
         src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80"
         alt="Luxury hotel room"
         showExploreButton
-      />
+      /> */}
+
+
    
       {/* Amenities */}
       <section className="py-16 px-4 bg-gray-50">
