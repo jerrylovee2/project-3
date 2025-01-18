@@ -36,11 +36,11 @@ const ImageSlider = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1200);
     };
 
     if (typeof window !== 'undefined') {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1200);
       window.addEventListener('resize', handleResize);
     }
 
@@ -75,7 +75,7 @@ const ImageSlider = () => {
           Explore the charm, comfort, and beauty that await you!
         </p>
         
-        <div className="flex items-center justify-center gap-6">
+        <div className="flex items-center justify-center gap-2 sm:gap-6">
           {isMobile ? (
             <ImageCard {...slides[currentIndex]} size="large" />
           ) : (

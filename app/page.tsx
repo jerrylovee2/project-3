@@ -16,12 +16,12 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="/bgfront.png"
+            src="/main1.png"
             alt="Mountain View"
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0" />
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="relative min-h-[600px] mt-10 w-full overflow-hidden">
         {/* Forest background image */}
         <Image
-          src="/greeting.png"
+          src="/main2.png"
           alt="Misty forest landscape"
           fill
           priority
@@ -77,11 +77,11 @@ export default function Home() {
             {/* Kasauli Card */}
             <Link href="/kasauli" className="group relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+                src="/main3.png"
                 alt="Kasauli"
                 className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-3xl font-bold mb-2 flex items-center gap-2">
                   <MapPin className="h-6 w-6" />
@@ -94,11 +94,11 @@ export default function Home() {
             {/* Chail Card */}
             <Link href="/chail" className="group relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e"
+                src="/main4.png"
                 alt="Chail"
                 className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-3xl font-bold mb-2 flex items-center gap-2">
                   <MapPin className="h-6 w-6" />
