@@ -43,15 +43,15 @@ export default function ThreeCardSlider() {
   return (
     <div className="w-full max-w-full mx-auto px-4 py-8">
       {/* Header text */}
-      <div className="text-center mb-12 px-4 pt-24 pb-16 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+      {/* <div className="text-center mb-12 px-4 pt-24 pb-16 sm:px-6 lg:px-8 max-w-3xl mx-auto">
         <p className="text-gray-800 text-lg leading-relaxed">
           Escape to a luxurious and cozy retreat where comfort meets elegance, offering a perfect blend of serenity and style. Indulge in a haven of warmth and luxury, designed to relax your soul and elevate your stay.
         </p>
-      </div>
+      </div> */}
 
       {/* Slider container */}
       <div className="relative">
-        <div className="flex justify-center items-center gap-4 h-[600px] overflow-hidden">
+        <div className="flex justify-center items-center gap-4 h-[400px] overflow-hidden">
           {/* Left card (previous) */}
           <Card className="relative w-fit sm:w-1/4 h-[400px] shrink-0 overflow-hidden transition-all duration-500 ease-in-out opacity-100">
             <img

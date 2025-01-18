@@ -62,8 +62,8 @@ export default function Kasauli() {
       <LuxurySection />
       
       <ThreeCardSlider/>
-
-      {/* <ImageSection 
+{/* 
+      <ImageSection 
         src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80"
         alt="Luxury hotel room"
         showExploreButton
