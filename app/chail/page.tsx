@@ -17,7 +17,7 @@ import Link from "next/link";
 
 export default function chail() {
   return (
-    <main className="min-h-screen bg-[#F9FAFB]">
+    <main className="min-h-screen bg-[#F9FAFB] font-serif">
       <Navbar />
 
       {/* Hero Section */}
@@ -32,7 +32,8 @@ export default function chail() {
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
-          The Hills. The Calm. The Charm.
+          Plan. Stay. Explore. 
+          All in One Place
             <br></br>
             All Together.
           </h1>

@@ -19,9 +19,9 @@ import Kasaulilux from "@/components/kasaulilux";
 
 export default function Kasauli() {
   return (
-    <main className="min-h-screen bg-[#F9FAFB]">
+    <main className="min-h-screen bg-[#F9FAFB] font-serif">
       <Navbar />
-
+    
       {/* Hero Section */}
       <section className="relative h-[70vh] pt-16">
         <div className="absolute inset-0">

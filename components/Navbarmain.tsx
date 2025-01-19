@@ -8,7 +8,7 @@ import { MessageCircle, ChevronDown, Instagram, Facebook } from 'lucide-react'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '#' },
+  // { name: 'About', href: '#' },
   {
     name: 'Locations',
     href: '#',
