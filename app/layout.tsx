@@ -10,7 +10,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Haddely Inn',
+  title: 'Hadleyinn',
   description: 'Haddely Inn',
 };
 
