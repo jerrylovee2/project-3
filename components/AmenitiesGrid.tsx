@@ -1,6 +1,6 @@
 import { Wifi, Car, PawPrint, Utensils, Home, Bath, ChefHat, Coffee, Gamepad2 } from 'lucide-react'
 
-export default function AmenitiesGrid() {
+export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) {
   const amenities = [
     { icon: <Wifi className="w-6 h-6" />, label: "Free Wi-Fi" },
     { icon: <Car className="w-6 h-6" />, label: "Free Parking" },
@@ -44,12 +44,10 @@ export default function AmenitiesGrid() {
         {/* Right side - Text Content */}
         <div className="w-1/2 flex flex-col justify-center">
           <h2 className="text-sm sm:text-4xl md:text-5xl font-serif italic mb-6">
-            Discover Hadley Inn Hospitality
+            {prop}
           </h2>
           <p className="text-gray-600 leading-4 text-[10px] sm:text-xl sm:leading-relaxed max-w-lg">
-            Experience the warmth of Hadley Inn Hospitality, where every detail is
-            crafted for your comfort and joy. Discover unmatched service, cozy
-            stays, and a welcoming atmosphere that feels like home.
+            {text}
           </p>
         </div>
       </div>

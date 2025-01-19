@@ -2,35 +2,62 @@ import React, { useState, useEffect } from 'react';
 import ImageCard from './ImageCard';
 import NavigationButton from './NavigationButton';
 
-const slides = [
-  {
-    id: 1,
-    title: "Rooms",
-    image: "/visual1.png"
-  },
-  {
-    id: 2,
-    title: "Snowfall",
-    image: "/visual2.png"
-  },
-  {
-    id: 3,
-    title: "Serenic Views",
-    image: "/visual3.png"
-  },
-  {
-    id: 4,
-    title: "Exteriors",
-    image: "/visual4.png"
-  },
-  {
-    id: 5,
-    title: "Sunrise/Sunsets",
-    image: "/visual5.png"
-  }
-];
 
-const ImageSlider = () => {
+
+const ImageSlider = ({ location }: { location: 'kasauli' | 'chail' }) => {
+  const slides = location === 'kasauli' ? [
+    {
+      id: 1,
+      title: "Rooms",
+      image: "/h5.png"
+    },
+    {
+      id: 2,
+      title: "Leisures",
+      image: "/h2.png"
+    },
+    {
+      id: 3,
+      title: "Live Music",
+      image: "/h1.png"
+    },
+    {
+      id: 4,
+      title: "Terrace",
+      image: "/h4.png"
+    },
+    {
+      id: 5,
+      title: "Sunrise / Sunset",
+      image: "/h3.png"
+    },
+  ] : [
+    {
+      id: 1,
+      title: "Rooms",
+      image: "/visual1.png"
+    },
+    {
+      id: 2,
+      title: "Snowfall",
+      image: "/visual2.png"
+    },
+    {
+      id: 3,
+      title: "Serenic Views",
+      image: "/visual3.png"
+    },
+    {
+      id: 4,
+      title: "Exteriors",
+      image: "/visual4.png"
+    },
+    {
+      id: 5,
+      title: "Sunrise/Sunsets",
+      image: "/visual5.png"
+    }
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 

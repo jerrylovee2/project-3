@@ -5,7 +5,7 @@ export default function LuxurySection() {
     <div className="relative">
       <div className="absolute left-0 right-0 top-0">
         {/* Vertical line from top */}
-        <div className="absolute left-[20%] -top-12 w-px h-16 bg-emerald-600"></div>
+        <div className="absolute left-[20%] -top-12 w-px h-12 bg-emerald-600"></div>
         
         {/* Horizontal line with text */}
         <div className="relative flex items-center mx-auto">

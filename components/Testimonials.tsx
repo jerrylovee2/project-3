@@ -18,51 +18,60 @@ const testimonials = [
     name: "Raghav T.",
     quote: "A hidden gem. I absolutely loved my time here. The peaceful surroundings and lovely gardens created the perfect escape. The cozy rooms and friendly service made it a stay to remember.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop",
+    image: "/pp1.png",
     background: "/cardimage.png",
+    letter:'R',
   },
   {
     id: 2,
     name: "Meera J.",
     quote: "Perfect getaway! This hotel is the perfect place for a relaxing retreat. The scenic views, excellent service, and calm ambiance made my stay unforgettable. Highly recommend for anyone looking to unwind!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop",
+    image: "/pp1.png",
     background: "/cardimage2.png",
+    letter:'M',
   },
   {
     id: 3,
     name: "Aarav K.",
     quote: "Truly delightful stay! The hotel exceeded all my expectations! Beautiful rooms, amazing terrace views, and a truly relaxing atmosphere. The staff was incredibly welcoming and made me feel right at home.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2940&auto=format&fit=crop",
+    image: "/pp1.png",
     background: "/cardimage3.png",
+    letter:'A',
   },
   {
     id: 4,
     name: "Sarah M.",
     quote: "An exceptional experience! The attention to detail and personalized service made this stay memorable. The surroundings are breathtaking and the amenities are top-notch.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2940&auto=format&fit=crop",
+    image: "/pp1.png",
     background: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2940&auto=format&fit=crop",
+    letter:'S',
   },
   {
     id: 5,
     name: "David R.",
     quote: "Beyond expectations! From the moment I arrived, I knew this place was special. The tranquil environment and luxurious accommodations created the perfect retreat.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop",
+    image: "/pp1.png",
     background: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2940&auto=format&fit=crop",
+    letter:'D',
   },
 ]
 
 export default function TestimonialSlider() {
   return (
-    <div className="py-12 px-4 bg-gray-50">
-      <h2 className="text-center text-4xl font-semibold text-green-600 mb-12">
-        What People say about us?
-      </h2>
+    <div className="">
+      <div className="flex items-center justify-center mb-12">
+        <div className="w-[60%] h-px bg-green-600 "></div>
+        <h2 className="text-4xl font-semibold text-green-600">
+          What People say about us?
+        </h2>
+        <div className="w-[10%] h-px bg-green-600 "></div>
+      </div>
       
-      <div className="relative w-full mx-auto">
+      <div className="relative w-full mx-auto py-12 px-4 bg-gray-50">
         <Carousel 
           className="w-full"
           opts={{
@@ -87,12 +96,15 @@ export default function TestimonialSlider() {
                     
                     <CardContent className="relative p-8 h-full flex flex-col items-center justify-center text-white">
                       {/* Profile Image */}
-                      <div className="w-10 h-10 lg:w-20 md:h-20 rounded-full overflow-hidden border-2 border-white mb-4">
+                      <div className="w-10 h-10 lg:w-20 md:h-20 rounded-full overflow-hidden border-2 border-white mb-4 relative">
                         <img
                           src={testimonial.image}
                           alt={`${testimonial.name}'s profile`}
                           className="w-full h-full object-cover"
                         />
+                        <div className="absolute inset-0 m-auto text-white text-center">
+                          <span className="text-xl relative top-5 font-bold">{testimonial.letter}</span>
+                        </div>
                       </div>
                       
                       {/* Star Rating */}

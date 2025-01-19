@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-export default function ContactForm() {
+export default function ContactForm({prop}: {prop: any}) {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -48,7 +48,7 @@ export default function ContactForm() {
         {/* Form Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center p-8">
           <h2 className="text-4xl md:text-5xl font-serif text-[#2E8B57] mb-12">
-            Drop Us a Message!
+            {prop}
           </h2>
 
           <form onSubmit={handleSubmit} className="w-full max-w-2xl space-y-6">

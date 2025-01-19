@@ -13,6 +13,7 @@ import ImageSection from "@/components/Imagesection";
 import HeroSection from "@/components/Herosection";
 import LuxurySection from "@/components/Luxary";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function chail() {
   return (
@@ -31,10 +32,12 @@ export default function chail() {
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
-            The Hills. The Calm. The Charm.
+          The Hills. The Calm. The Charm.
+            <br></br>
+            All Together.
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-2xl">
-            All Together.
+            
           </p>
         </div>
       </section>
@@ -71,12 +74,12 @@ export default function chail() {
       {/* Amenities */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <AmenitiesGrid />
+          <AmenitiesGrid prop={"Be Our Guest at Hadley Inn"} text={"Enjoy exclusive perks, special discounts, & personalized experiences. Join the Hadley Inn family & make your every stay unforgettable!"}/>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 px-4">
+      <section className="">
         <div className=" mx-auto">
           <Testimonials />
         </div>
@@ -90,14 +93,14 @@ export default function chail() {
         </div>
       </section> */}
       
-      <ImageSlider/>
+      <ImageSlider location="chail"/>
       
       {/* Attractions */}
       <div className="">
         <Attractions location="chail" />
       </div>
     
-      <ContactForm/>
+      <ContactForm prop={"Drop Us a Message!"}/>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
@@ -121,7 +124,7 @@ export default function chail() {
               <ul>
                 <li className="mb-2">Cancellations and Refund</li>
                 <li className="mb-2">Terms and Conditions</li>
-                <li>Privacy Policy</li>
+                <Link href="/privacy">Privacy Policy</Link>
               </ul>
             </div>
           </div>

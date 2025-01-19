@@ -13,6 +13,7 @@ import HeroSection from "@/components/Herosection";
 import LuxurySection from "@/components/Luxary";
 import ThreeCardSlider from "@/components/threeCardslider";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Kasauli() {
   return (
@@ -32,9 +33,11 @@ export default function Kasauli() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
             The Hills. The Calm. The Charm.
+            <br></br>
+            All Together.
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-2xl">
-            All Together.
+           
           </p>
         </div>
       </section>
@@ -75,12 +78,12 @@ export default function Kasauli() {
       {/* Amenities */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <AmenitiesGrid />
+          <AmenitiesGrid prop={"Discover Hadley Inn Hospitality"} text={"Experience the warmth of Hadley Inn Hospitality, where every detail is  crafted for your comfort and joy. Discover unmatched service, cozy stays, and a welcoming atmosphere that feels like home."}/>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 px-4">
+      <section className="">
         <div className=" mx-auto">
           <Testimonials />
         </div>
@@ -94,14 +97,14 @@ export default function Kasauli() {
         </div>
       </section> */}
       
-      <ImageSlider/>
+      <ImageSlider location="kasauli"/>
       
       {/* Attractions */}
       <div className="">
         <Attractions location="kasauli" />
       </div>
     
-      <ContactForm/>
+      <ContactForm prop={"Waiting to hear from you!"}/>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
@@ -125,7 +128,7 @@ export default function Kasauli() {
               <ul>
                 <li className="mb-2">Cancellations and Refund</li>
                 <li className="mb-2">Terms and Conditions</li>
-                <li>Privacy Policy</li>
+                <Link href="/privacy">Privacy Policy</Link>
               </ul>
             </div>
           </div>
