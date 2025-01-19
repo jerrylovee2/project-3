@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
         <div className="w-[10%] h-px bg-green-600 "></div>
       </div>
       
-      <div className="relative w-full mx-auto bg-[#F9FAFB]">
+      <div className="relative w-[95%] mx-auto bg-[#F9FAFB]">
         <Carousel 
           className="w-full"
           opts={{
