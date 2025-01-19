@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
         <div className="w-[10%] h-px bg-green-600 "></div>
       </div>
       
-      <div className="relative w-[95%] mx-auto bg-[#F9FAFB]">
+      <div className="relative w-[80%] mx-auto bg-[#F9FAFB]">
         <Carousel 
           className="w-full"
           opts={{
@@ -103,7 +103,7 @@ export default function TestimonialSlider() {
                           className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 m-auto text-white text-center">
-                          <span className="text-xl relative top-5 font-bold">{testimonial.letter}</span>
+                          <span className="text-xl relative top-1 sm:top-5 font-bold">{testimonial.letter}</span>
                         </div>
                       </div>
                       
