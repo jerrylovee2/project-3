@@ -14,6 +14,7 @@ import LuxurySection from "@/components/Luxary";
 import ThreeCardSlider from "@/components/threeCardslider";
 import Image from "next/image";
 import Link from "next/link";
+import HeroProfile from "@/components/HeroProfile";
 
 export default function Kasauli() {
   return (
@@ -56,7 +57,8 @@ export default function Kasauli() {
         </div>
       </section> */}
 
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroProfile/>
       
       <ImageSection 
         src="/kasual2.png"
