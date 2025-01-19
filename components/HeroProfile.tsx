@@ -11,9 +11,7 @@ export default function HeroProfile() {
         </DecorativeLine>
         
         <p className="mt-6 text-sm sm:text-lg text-gray-600 max-w-3xl mx-auto">
-          Nestled in the heart of Chail, our hotel offers a peaceful sanctuary surrounded by nature's beauty. With spacious rooms,
-          impeccable service, and panoramic views of the majestic Himalayas, we promise an unforgettable blend of relaxation and
-          adventure. Discover the allure of Chail and create lasting memories in this serene haven.
+        At the heart of the hills, we craft experiences where luxury meets nature’s embrace. More than a stay, it’s a journey of serenity, personalized care, and unforgettable moments. Let us redefine your idea of escape with our soulful hospitality.
         </p>
       </div>
     </section>
