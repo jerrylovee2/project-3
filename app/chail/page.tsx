@@ -109,7 +109,7 @@ export default function chail() {
             <div>
               <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
               <p className="mb-2">+91-809112116, +91-9317017711</p>
-              <p>customercare@hadleyinn.com</p>
+              <p>Hadleyinn01@gmail.com</p>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Connect</h4>
