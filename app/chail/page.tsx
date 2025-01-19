@@ -12,6 +12,7 @@ import ContactForm from "@/components/newform";
 import ImageSection from "@/components/Imagesection";
 import HeroSection from "@/components/Herosection";
 import LuxurySection from "@/components/Luxary";
+import Image from "next/image";
 
 export default function chail() {
   return (
@@ -129,6 +130,21 @@ export default function chail() {
           </div>
         </div>
       </footer>
+      <a
+        href="https://wa.me/91809112116"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <Image
+          src="/whatsapp.svg"
+          alt="WhatsApp"
+          width={24}
+          height={24}
+          className="w-6 h-6"
+        />
+      </a>
     </main>
   );
 }

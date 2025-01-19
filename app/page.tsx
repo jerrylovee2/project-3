@@ -2,16 +2,13 @@
 
 import Link from "next/link";
 import { MapPin } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import ContactForm from "@/components/ContactForm";
-import Image from "next/image";
 import NavbarMain from "@/components/Navbarmain";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* <Navbar /> */}
-      <NavbarMain/>
+      <NavbarMain />
       {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
@@ -20,7 +17,6 @@ export default function Home() {
             alt="Mountain View"
             className="w-full h-full object-cover"
           />
-
           <div className="absolute inset-0" />
         </div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
@@ -36,7 +32,6 @@ export default function Home() {
 
       {/* Welcome Section */}
       <div className="relative min-h-[600px] mt-10 w-full overflow-hidden">
-        {/* Forest background image */}
         <Image
           src="/main2.png"
           alt="Misty forest landscape"
@@ -44,18 +39,16 @@ export default function Home() {
           priority
           className="object-cover object-center brightness-90"
         />
-
-        {/* Content overlay */}
         <div className="relative flex min-h-[600px] items-center justify-center px-4 py-16">
           <div className="max-w-3xl rounded-[40px] bg-white/60 px-8 py-12 text-center backdrop-blur-sm">
             <h1 className="mb-6 text-4xl font-semibold text-[#4A8469]">
               Warm Greetings!
             </h1>
             <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-800">
-              Nestled in the mountains, our inn is one of the best hotels in Himachal.
-              It offers a serene escape with breathtaking views, cozy rooms, and
-              exceptional service. Experience relaxation, adventure, and warm
-              hospitality for an unforgettable stay in nature&apos;s embrace.
+              Nestled in the mountains, our inn is one of the best hotels in
+              Himachal. It offers a serene escape with breathtaking views, cozy
+              rooms, and exceptional service. Experience relaxation, adventure,
+              and warm hospitality for an unforgettable stay in nature&apos;s embrace.
             </p>
           </div>
         </div>
@@ -74,8 +67,10 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Kasauli Card */}
-            <Link href="/kasauli" className="group relative overflow-hidden rounded-lg shadow-lg">
+            <Link
+              href="/kasauli"
+              className="group relative overflow-hidden rounded-lg shadow-lg"
+            >
               <img
                 src="/main3.png"
                 alt="Kasauli"
@@ -90,9 +85,10 @@ export default function Home() {
                 <p className="text-lg opacity-90">Explore the charm of hills</p>
               </div>
             </Link>
-
-            {/* Chail Card */}
-            <Link href="/chail" className="group relative overflow-hidden rounded-lg shadow-lg">
+            <Link
+              href="/chail"
+              className="group relative overflow-hidden rounded-lg shadow-lg"
+            >
               <img
                 src="/main4.png"
                 alt="Chail"
@@ -104,18 +100,23 @@ export default function Home() {
                   <MapPin className="h-6 w-6" />
                   Chail
                 </h3>
-                <p className="text-lg opacity-90">Experience mountain serenity</p>
+                <p className="text-lg opacity-90">
+                  Experience mountain serenity
+                </p>
               </div>
             </Link>
           </div>
         </div>
       </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
+              <h4 className="text-xl font-bold mb-4">
+                For Questions or Inquiries
+              </h4>
               <p className="mb-2">+91-809112116, +91-9317017711</p>
               <p>customercare@hadleyinn.com</p>
             </div>
@@ -133,9 +134,7 @@ export default function Home() {
                 <li className="mb-2">Cancellations and Refund</li>
                 <li className="mb-2">Terms and Conditions</li>
                 <li>
-                  <Link href="/privacy">
-                    Privacy Policy
-                  </Link>
+                  <Link href="/privacy">Privacy Policy</Link>
                 </li>
               </ul>
             </div>
@@ -145,6 +144,23 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* WhatsApp Floating Icon */}
+      <a
+        href="https://wa.me/91809112116"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <Image
+          src="/whatsapp.svg"
+          alt="WhatsApp"
+          width={24}
+          height={24}
+          className="w-6 h-6"
+        />
+      </a>
     </main>
   );
 }
