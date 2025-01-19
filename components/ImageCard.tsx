@@ -14,11 +14,11 @@ const ImageCard: React.FC<ImageCardProps> = ({ title, image, size }) => {
   };
 
   return (
-    <div className={`relative ${sizeClasses[size]} transition-all duration-300`}>
+    <div className={` ${sizeClasses[size]} transition-all duration-300`}>
       <img
         src={image}
         alt={title}
-        className="w-full h-full object-cover rounded-lg shadow-lg"
+        className="w-full h-full object-cover rounded-lg "
       />
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-4 rounded-b-lg">
         <h3 className="text-white text-xl font-semibold">{title}</h3>
