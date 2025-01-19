@@ -87,10 +87,14 @@ export default function Attractions({ location }: { location: 'kasauli' | 'chail
   
 
   return (
-    <section className="py-16">
-      <h2 className="text-3xl font-bold text-center text-green-600 mb-12">
-        Close-by Attractions
-      </h2>
+    <>
+   
+    <section className="">
+
+      <div className="w-full h-24 bg-[#2FAF5A] mt-5 mb-5 flex items-center justify-center">
+        <h2 className="text-white text-xl font-bold">Close-by Attractions</h2>
+      </div>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {attractions.map((attraction) => (
           <div key={attraction.title} className="group relative overflow-hidden">
@@ -108,5 +112,6 @@ export default function Attractions({ location }: { location: 'kasauli' | 'chail
         ))}
       </div>
     </section>
+    </>
   );
 }
