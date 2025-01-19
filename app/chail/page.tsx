@@ -17,7 +17,7 @@ import Link from "next/link";
 
 export default function chail() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#F9FAFB]">
       <Navbar />
 
       {/* Hero Section */}

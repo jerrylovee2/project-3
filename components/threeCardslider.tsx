@@ -49,7 +49,7 @@ export default function ThreeCardSlider() {
   })
 
   return (
-    <div className="w-full max-w-full mx-auto px-4 py-8">
+    <div className="w-full max-w-full mx-auto px-4 py-8 bg-[#F5FBF5]">
       <div className="relative" {...swipeHandlers}>
         {/* Slider container */}
         <div className="flex justify-center items-center gap-4 h-[400px] overflow-hidden">

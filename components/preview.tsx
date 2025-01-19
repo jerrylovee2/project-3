@@ -154,10 +154,10 @@ export default function ScenicPreview() {
   }
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-12">
+    <div className="w-full max-w-7xl mx-auto px-4 py-12 bg-[bg-[#F9FAFB]]">
       <div className="relative mb-12">
         <h2 className="text-center text-4xl font-serif text-[#2E8B57] relative">
-          <span className="relative px-8">
+          <span className="relative px-8 mt-10">
             Our Scenic Preview
             <div className="absolute left-0 right-0 top-1/2 -z-10 h-px bg-[#2E8B57]" />
           </span>

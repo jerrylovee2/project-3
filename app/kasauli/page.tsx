@@ -15,10 +15,11 @@ import ThreeCardSlider from "@/components/threeCardslider";
 import Image from "next/image";
 import Link from "next/link";
 import HeroProfile from "@/components/HeroProfile";
+import Kasaulilux from "@/components/kasaulilux";
 
 export default function Kasauli() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#F9FAFB]">
       <Navbar />
 
       {/* Hero Section */}
@@ -65,7 +66,7 @@ export default function Kasauli() {
         alt="Scenic mountain view from hotel"
       />
       
-      <LuxurySection />
+      <Kasaulilux/>
       
       <ThreeCardSlider/>
 {/* 

@@ -62,7 +62,7 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   return (
-    <div className="">
+    <div className="bg-[#F9FAFB]">
       <div className="flex items-center justify-center mb-12">
         <div className="w-[60%] h-px bg-green-600 "></div>
         <h2 className="text-4xl font-semibold text-green-600">
@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
         <div className="w-[10%] h-px bg-green-600 "></div>
       </div>
       
-      <div className="relative w-full mx-auto py-12 px-4 bg-gray-50">
+      <div className="relative w-full mx-auto bg-[#F9FAFB]">
         <Carousel 
           className="w-full"
           opts={{

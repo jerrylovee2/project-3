@@ -8,7 +8,7 @@ interface ImageSectionProps {
 
 export default function ImageSection({ src, alt, showExploreButton }: ImageSectionProps) {
   return (
-    <section className="relative h-[600px] w-full mb-12">
+    <section className="relative h-[600px] bg-[#F9FAFB] w-full mb-12">
       <Image
         src={src}
         alt={alt}

@@ -6,7 +6,7 @@ export default function HeroProfile() {
       <div className=" mx-auto text-center">
         <DecorativeLine>
           <h1 className="text-xl sm:text-4xl font-serif text-emerald-700 whitespace-nowrap px-4">
-            Relax, Recharge, and Reconnect in Kasauli
+          Escape to Quiet, Comfort, and Beauty in Kasauli
           </h1>
         </DecorativeLine>
         
