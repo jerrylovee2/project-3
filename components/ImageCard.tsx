@@ -10,7 +10,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ title, image, size }) => {
   const sizeClasses = {
     small: 'w-[150px] h-[200px] md:w-[200px] md:h-[300px]',
     medium: 'w-[150px] h-[250px] md:w-[200px] md:h-[400px]',
-    large: 'w-[250px] h-[300px] md:w-[400px] md:h-[500px]'
+    large: 'w-[450px] h-[350px] md:w-[450px] md:h-[550px]'
   };
 
   return (

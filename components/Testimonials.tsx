@@ -87,7 +87,7 @@ export default function TestimonialSlider() {
                     
                     <CardContent className="relative p-8 h-full flex flex-col items-center justify-center text-white">
                       {/* Profile Image */}
-                      <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white mb-4">
+                      <div className="w-10 h-10 lg:w-20 md:h-20 rounded-full overflow-hidden border-2 border-white mb-4">
                         <img
                           src={testimonial.image}
                           alt={`${testimonial.name}'s profile`}
@@ -106,7 +106,7 @@ export default function TestimonialSlider() {
                       </div>
                       
                       {/* Quote */}
-                      <blockquote className="text-center mb-4 text-lg italic">
+                      <blockquote className="text-center mb-4 text-sm lg:text-lg italic">
                         "{testimonial.quote}"
                       </blockquote>
                       

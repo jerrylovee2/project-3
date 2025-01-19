@@ -14,7 +14,7 @@ const navigation = [
     href: '#',
     children: [
       { name: 'chail', href: '/chail' },
-      { name: 'kasuali', href: '/kasauli' },
+      { name: 'kasauli', href: '/kasauli' },
     ],
   },
 //   { name: 'Contact', href: '#' },
