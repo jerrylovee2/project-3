@@ -77,7 +77,7 @@ export default function Navbar1() {
             <Link href="https://www.facebook.com/share/15j5fNqxRP/" target="_blank" className="text-gray-700 hover:text-green-700">
               <Facebook className="h-5 w-5" />
             </Link>
-            <Link href="https://wa.me/+9180911121161616" target="_blank" className="text-gray-700 hover:text-green-700">
+            <Link href="https://wa.me/+91809111211616" target="_blank" className="text-gray-700 hover:text-green-700">
               <MessageCircle className="h-5 w-5" />
             </Link>
           </div>
