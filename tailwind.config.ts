@@ -15,7 +15,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily:{
-          title:["Playfair Display","sans-serif"]
+          title:["Playfair Display","sans-serif"],
+          coopse:["Copse","sans-serif"],
       },
       borderRadius: {
         lg: 'var(--radius)',

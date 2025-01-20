@@ -14,6 +14,7 @@ import HeroSection from "@/components/Herosection";
 import LuxurySection from "@/components/Luxary";
 import Image from "next/image";
 import Link from "next/link";
+import { MapPin, Phone,Mail } from "lucide-react"; 
 
 export default function chail() {
   return (
@@ -109,8 +110,18 @@ export default function chail() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
-              <p className="mb-2">+91-809112116, +91-9317017711</p>
-              <p>Hadleyinn01@gmail.com</p>
+              <div className="flex items-center mb-2">
+                <Phone className="h-4 w-4 mr-2" />
+                <p className="font-coopse">+91-809112116, +91-9317017711</p>
+              </div>
+              <div className="flex items-center mb-2">
+                <Mail className="h-4 w-4 mr-2" />
+                <p className="font-coopse">customercare@hadleyinn.com</p>
+              </div>
+              <div className="flex items-center mb-2">
+                <MapPin className="h-10 w-10 mr-2" />
+                <p className="font-coopse">Kasauli road, near Modern Dhabha, Kasauli, Dharampur, Himachal Pradesh 173209</p>
+              </div>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Connect</h4>
@@ -125,7 +136,11 @@ export default function chail() {
               <ul>
                 <li className="mb-2">Cancellations and Refund</li>
                 <li className="mb-2">Terms and Conditions</li>
-                <Link href="/privacy">Privacy Policy</Link>
+                <li>
+                  <Link href="/privacy">
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
