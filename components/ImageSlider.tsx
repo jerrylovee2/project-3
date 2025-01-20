@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageCard from './ImageCard';
 import NavigationButton from './NavigationButton';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 
 
@@ -14,7 +15,7 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
     {
       id: 2,
       title: "Leisures",
-      image: "/h2.png"
+      image: "/h5.png"
     },
     {
       id: 3,
@@ -24,7 +25,7 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
     {
       id: 4,
       title: "Terrace",
-      image: "/h5.png"
+      image: "/h2.png"
     },
     {
       id: 5,
@@ -104,7 +105,27 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
         
         <div className="flex items-center justify-center gap-2 sm:gap-6">
           {isMobile ? (
-            <ImageCard {...slides[currentIndex]} size="large" />
+            <Carousel 
+              className="w-full"
+              opts={{
+                align: "start",
+                loop: true,
+                skipSnaps: false,
+                slidesToScroll: 1,
+              }}
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {slides.map((slide, index) => ( 
+                  <CarouselItem key={slide.id} className={`pl-2 md:pl-4 md:basis-1/3 ${index === 0 || index === 2 ? 'w-[200px] h-[300px]' : ''}`}>
+                    <div className="p-1">
+                      <ImageCard {...slide} size="large" />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              {/* <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-white border-white bg-white/20" />
+              <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-white border-white bg-white/20" /> */}
+            </Carousel>
           ) : (
             <>
               <div className="mt-12">

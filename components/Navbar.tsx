@@ -16,8 +16,7 @@ const navigation = [
       { name: 'Chail', href: '/chail' },
       { name: 'Kasauli', href: 'kasauli' },
     ],
-  },
-  { name: 'Contact', href: '#' },
+  }
 ]
 
 export default function Navbar() {
@@ -72,13 +71,13 @@ export default function Navbar() {
 
           {/* Social Icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="#" className="text-gray-700 hover:text-green-700">
+            <Link href="https://www.instagram.com/innhadley?igsh=MTdpMmk4NjFyMzZ5YQ==" target="_blank" className="text-gray-700 hover:text-green-700">
               <Instagram className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-green-700">
+            <Link href="https://www.facebook.com/share/18qzgVp1QC/" target="_blank" className="text-gray-700 hover:text-green-700">
               <Facebook className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-green-700">
+            <Link href="https://wa.me/91809112116" target="_blank" className="text-gray-700 hover:text-green-700">
               <MessageCircle className="h-5 w-5" />
             </Link>
           </div>
@@ -142,13 +141,13 @@ export default function Navbar() {
         </div>
         <div className="pt-4 pb-3 border-t border-gray-200">
           <div className="flex items-center justify-center space-x-4 px-4">
-            <Link href="#" className="text-gray-700 hover:text-green-700">
+            <Link href="https://www.instagram.com/innhadley?igsh=MTdpMmk4NjFyMzZ5YQ==" className="text-gray-700 hover:text-green-700">
               <Instagram className="h-6 w-6" />
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-green-700">
+            <Link href="https://www.facebook.com/share/18qzgVp1QC/" className="text-gray-700 hover:text-green-700">
               <Facebook className="h-6 w-6" />
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-green-700">
+            <Link href="https://wa.me/91809112116" className="text-gray-700 hover:text-green-700">
               <MessageCircle className="h-6 w-6" />
             </Link>
           </div>

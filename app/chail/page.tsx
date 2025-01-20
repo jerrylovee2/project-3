@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
 import AmenitiesGrid from "@/components/AmenitiesGrid";
 import Testimonials from "@/components/Testimonials";
 import VisualTour from "@/components/VisualTour";
@@ -15,11 +14,12 @@ import LuxurySection from "@/components/Luxary";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone,Mail } from "lucide-react"; 
+import Navbar1 from "@/components/Navbar1";
 
 export default function chail() {
   return (
     <main className="min-h-screen  bg-[#F9FAFB] font-title">
-      <Navbar />
+      <Navbar1 />
 
       {/* Hero Section */}
       <section className="relative h-[70vh] pt-16">
@@ -116,26 +116,38 @@ export default function chail() {
               </div>
               <div className="flex items-center mb-2">
                 <Mail className="h-4 w-4 mr-2" />
-                <p className="font-coopse">customercare@hadleyinn.com</p>
+                <p className="font-coopse">Hadleyinn01@gmail.com</p>
               </div>
               <div className="flex items-center mb-2">
-                <MapPin className="h-10 w-10 mr-2" />
-                <p className="font-coopse">Kasauli road, near Modern Dhabha, Kasauli, Dharampur, Himachal Pradesh 173209</p>
+                <MapPin className="h-4 w-4 mr-2" />
+                <p className="font-coopse">Alampur, Chail, Himachal Pradesh 173217</p>
               </div>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Connect</h4>
               <ul>
-                <li className="mb-2">Instagram</li>
-                <li className="mb-2">Facebook</li>
-                <li>WhatsApp</li>
+                <li className="mb-2">
+                  <a href="https://www.instagram.com/hadleyinncottages?igsh=MWkyam1xYW5oc2Z3Mw==" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="https://www.facebook.com/share/15j5fNqxRP/" target="_blank" rel="noopener noreferrer">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/91809112116" target="_blank" rel="noopener noreferrer">
+                    WhatsApp
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Need Help?</h4>
               <ul>
-                <li className="mb-2">Cancellations and Refund</li>
-                <li className="mb-2">Terms and Conditions</li>
+              <li className="mb-2"> <Link href="/privacy">Cancellations and Refund </Link></li>
+              <li className="mb-2"><Link href="/privacy">Terms and Conditions</Link></li>
                 <li>
                   <Link href="/privacy">
                     Privacy Policy
@@ -145,7 +157,7 @@ export default function chail() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-gray-800">
-            <p>© 2024 HotelHadleyInn Ltd. All Rights Reserved</p>
+            <p>©  2023 TheHakamHari Company All Rights Reserved</p>
           </div>
         </div>
       </footer>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import NavbarMain from "@/components/Navbarmain";
 import Image from "next/image";
 
@@ -82,7 +82,10 @@ export default function Home() {
                   <MapPin className="h-6 w-6" />
                   Kasauli
                 </h3>
-                <p className="text-lg opacity-90">Explore the charm of hills</p>
+                <div className="flex items-center justify-center">
+                    <p className="text-lg opacity-90 mr-1">Know More</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                </div>
               </div>
             </Link>
             <Link
@@ -100,9 +103,10 @@ export default function Home() {
                   <MapPin className="h-6 w-6" />
                   Chail
                 </h3>
-                <p className="text-lg opacity-90">
-                  Experience mountain serenity
-                </p>
+                <div className="flex items-center justify-center">
+                    <p className="text-lg opacity-90 mr-1">Know More</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                </div>
               </div>
             </Link>
           </div>
@@ -113,12 +117,20 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-xl font-bold mb-4">
-                For Questions or Inquiries
-              </h4>
-              <p className="mb-2">+91-809112116, +91-9317017711</p>
-              <p>Hadleyinn01@gmail.com</p>
+          <div>
+              <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
+              <div className="flex items-center mb-2">
+                <Phone className="h-4 w-4 mr-2" />
+                <p className="font-coopse">+91- 8091112116, +91- 9317017711</p>
+              </div>
+              <div className="flex items-center mb-2">
+                <Mail className="h-4 w-4 mr-2" />
+                <p className="font-coopse pl-2">Hadleyinn01@gmail.com</p>
+              </div>
+              <div className="flex items-center mb-2">
+                <MapPin className="h-10 w-10 mr-4" />
+                <p className="font-coopse">Kasauli road, near Modern Dhabha, Kasauli, Dharampur, Himachal Pradesh 173209</p>
+              </div>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Connect</h4>
@@ -131,8 +143,8 @@ export default function Home() {
             <div>
               <h4 className="text-xl font-bold mb-4">Need Help?</h4>
               <ul>
-                <li className="mb-2">Cancellations and Refund</li>
-                <li className="mb-2">Terms and Conditions</li>
+                <li className="mb-2"> <Link href="/privacy">Cancellations and Refund </Link></li>
+                <li className="mb-2"><Link href="/privacy">Terms and Conditions</Link></li>
                 <li>
                   <Link href="/privacy">Privacy Policy</Link>
                 </li>
@@ -140,7 +152,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-gray-800">
-            <p>© 2024 HotelHadleyInn Ltd. All Rights Reserved</p>
+          <p>©  2023 TheHakamHari Company All Rights Reserved</p>
           </div>
         </div>
       </footer>

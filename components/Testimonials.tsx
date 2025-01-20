@@ -19,7 +19,7 @@ const testimonials = [
     quote: "A hidden gem. I absolutely loved my time here. The peaceful surroundings and lovely gardens created the perfect escape. The cozy rooms and friendly service made it a stay to remember.",
     rating: 5,
     image: "/pp1.png",
-    background: "/cardimage.png",
+    background: "/cardimage7.png",
     letter:'R',
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     quote: "Perfect getaway! This hotel is the perfect place for a relaxing retreat. The scenic views, excellent service, and calm ambiance made my stay unforgettable. Highly recommend for anyone looking to unwind!",
     rating: 5,
     image: "/pp1.png",
-    background: "/cardimage2.png",
+    background: "/cardimage6.png",
     letter:'M',
   },
   {
@@ -37,7 +37,7 @@ const testimonials = [
     quote: "Truly delightful stay! The hotel exceeded all my expectations! Beautiful rooms, amazing terrace views, and a truly relaxing atmosphere. The staff was incredibly welcoming and made me feel right at home.",
     rating: 5,
     image: "/pp1.png",
-    background: "/cardimage3.png",
+    background: "/cardimage8.png",
     letter:'A',
   },
   {
@@ -46,7 +46,7 @@ const testimonials = [
     quote: "An exceptional experience! The attention to detail and personalized service made this stay memorable. The surroundings are breathtaking and the amenities are top-notch.",
     rating: 5,
     image: "/pp1.png",
-    background: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2940&auto=format&fit=crop",
+    background: "/cardimage6.png",
     letter:'S',
   },
   {
@@ -55,7 +55,7 @@ const testimonials = [
     quote: "Beyond expectations! From the moment I arrived, I knew this place was special. The tranquil environment and luxurious accommodations created the perfect retreat.",
     rating: 5,
     image: "/pp1.png",
-    background: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2940&auto=format&fit=crop",
+    background: "/cardimage8.png",
     letter:'D',
   },
 ]
@@ -64,11 +64,11 @@ export default function TestimonialSlider() {
   return (
     <div className="bg-[#F9FAFB]">
       <div className="flex items-center justify-center mb-12">
-        <div className="w-[55%] h-px bg-green-600 "></div>
+        <div className="w-[50%] h-px bg-green-600 "></div>
         <h2 className="text-4xl font-title text-green-600">
           What People say about us?
         </h2>
-        <div className="w-[10%] h-px bg-green-600 "></div>
+        <div className="w-[20%] h-px bg-green-600 "></div>
       </div>
       
       <div className="relative w-[80%] mx-auto bg-[#F9FAFB]">
@@ -85,7 +85,7 @@ export default function TestimonialSlider() {
             {testimonials.map((testimonial, index) => ( 
               <CarouselItem key={testimonial.id} className={`pl-2 md:pl-4 md:basis-1/3 ${index === 0 || index === 2 ? 'w-[200px] h-[300px]' : ''}`}>
                 <div className="p-1">
-                  <Card className="relative overflow-hidden rounded-xl border-0 h-[400px]">
+                  <Card className="relative overflow-hidden rounded-lg border-0 h-[400px]">
                     {/* Background Image with Overlay */}
                     <div 
                       className="absolute inset-0 bg-cover bg-center transition-transform duration-500 hover:scale-110"
@@ -119,7 +119,7 @@ export default function TestimonialSlider() {
                       
                       {/* Quote */}
                       <blockquote className="text-center mb-4 text-sm lg:text-lg italic">
-                        "{testimonial.quote}"
+                        "{testimonial.quote.substring(0, 40)}..."
                       </blockquote>
                       
                       {/* Author */}

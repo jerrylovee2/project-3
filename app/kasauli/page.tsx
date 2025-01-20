@@ -118,30 +118,43 @@ export default function Kasauli() {
               <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
               <div className="flex items-center mb-2">
                 <Phone className="h-4 w-4 mr-2" />
-                <p className="font-coopse">+91-809112116, +91-9317017711</p>
+                <p className="font-coopse">+91- 8091112116, +91- 9317017711</p>
               </div>
               <div className="flex items-center mb-2">
-                <Mail className="h-4 w-4 mr-2" />
-                <p className="font-coopse">customercare@hadleyinn.com</p>
+                <Mail className="h-4 w-4 mr2" />
+                <p className="font-coopse pl-2"> Hadleyinn01@gmail.com</p>
               </div>
               <div className="flex items-center mb-2">
-                <MapPin className="h-10 w-10 mr-2" />
-                <p className="font-coopse">Kasauli road, near Modern Dhabha, Kasauli, Dharampur, Himachal Pradesh 173209</p>
+                <MapPin className="h-4 w-4 mr-2" />
+                <p className="font-coopse">Kasauli road, near Modern Dhabha, 
+                  <br></br>Kasauli, Dharampur, Himachal Pradesh 173209</p>
               </div>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Connect</h4>
               <ul>
-                <li className="mb-2">Instagram</li>
-                <li className="mb-2">Facebook</li>
-                <li>WhatsApp</li>
+                <li className="mb-2">
+                  <a href="https://www.instagram.com/innhadley?igsh=MTdpMmk4NjFyMzZ5YQ==" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="https://www.facebook.com/share/18qzgVp1QC/" target="_blank" rel="noopener noreferrer">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/91809112116" target="_blank" rel="noopener noreferrer">
+                    WhatsApp
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-4">Need Help?</h4>
               <ul>
-                <li className="mb-2">Cancellations and Refund</li>
-                <li className="mb-2">Terms and Conditions</li>
+              <li className="mb-2"> <Link href="/privacy">Cancellations and Refund </Link></li>
+              <li className="mb-2"><Link href="/privacy">Terms and Conditions</Link></li>
                 <li>
                   <Link href="/privacy">
                     Privacy Policy
@@ -151,7 +164,7 @@ export default function Kasauli() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-gray-800">
-            <p>© 2024 HotelHadleyInn Ltd. All Rights Reserved</p>
+            <p>©  2023 TheHakamHari Company All Rights Reserved</p>
           </div>
         </div>
       </footer>
