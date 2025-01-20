@@ -19,7 +19,7 @@ import Kasaulilux from "@/components/kasaulilux";
 
 export default function Kasauli() {
   return (
-    <main className="min-h-screen bg-[#F9FAFB] font-serif">
+    <main className="min-h-screen bg-[#F9FAFB] font-title">
       <Navbar />
     
       {/* Hero Section */}
@@ -100,7 +100,7 @@ export default function Kasauli() {
         </div>
       </section> */}
       
-      <ImageSlider location="kasauli"/>
+      <ImageSlider location="kasauli" text="Our Scenic Preview"/>
       
       {/* Attractions */}
       <div className="">
@@ -110,7 +110,7 @@ export default function Kasauli() {
       <ContactForm prop={"Waiting to hear from you!"}/>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-900 font-title text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

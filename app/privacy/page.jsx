@@ -15,6 +15,7 @@ const privacy = () =>{
         <div>
         <TermsAndConditions/>
         </div>
+        
         <Footer/>
         </>
     )

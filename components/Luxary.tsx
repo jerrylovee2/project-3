@@ -13,7 +13,7 @@ export default function LuxurySection() {
           <div className="flex-1 h-px bg-emerald-600"></div>
           
           {/* Title */}
-          <h2 className="text-lg sm:text-3xl font-serif text-emerald-700 whitespace-nowrap px-4">
+          <h2 className="text-lg sm:text-3xl font-title text-emerald-700 whitespace-nowrap px-4">
             A Luxurious & Cozy Retreat
           </h2>
           

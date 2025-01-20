@@ -17,7 +17,7 @@ import Link from "next/link";
 
 export default function chail() {
   return (
-    <main className="min-h-screen bg-[#F9FAFB] font-serif">
+    <main className="min-h-screen  bg-[#F9FAFB] font-title">
       <Navbar />
 
       {/* Hero Section */}
@@ -94,7 +94,7 @@ export default function chail() {
         </div>
       </section> */}
       
-      <ImageSlider location="chail"/>
+      <ImageSlider location="chail" text="Our Visual Tour"/>
       
       {/* Attractions */}
       <div className="">

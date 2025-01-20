@@ -13,8 +13,8 @@ const navigation = [
     name: 'Locations',
     href: '#',
     children: [
-      { name: 'chail', href: '/chail' },
-      { name: 'kasauli', href: 'kasauli' },
+      { name: 'Chail', href: '/chail' },
+      { name: 'Kasauli', href: 'kasauli' },
     ],
   },
   { name: 'Contact', href: '#' },

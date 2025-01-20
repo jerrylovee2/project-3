@@ -4,7 +4,7 @@ import NavigationButton from './NavigationButton';
 
 
 
-const ImageSlider = ({ location }: { location: 'kasauli' | 'chail' }) => {
+const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: string },) => {
   const slides = location === 'kasauli' ? [
     {
       id: 1,
@@ -90,7 +90,7 @@ const ImageSlider = ({ location }: { location: 'kasauli' | 'chail' }) => {
     <div className="h-[700px] md:h-[800px] bg-[#F9FAFB] px-4 py-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-4xl font-bold text-green-700">Our Scenic Preview</h1>
+          <h1 className="text-4xl font-title text-green-700">{text}</h1>
           <div className="flex gap-3">
             <NavigationButton direction="prev" onClick={handlePrevious} />
             <NavigationButton direction="next" onClick={handleNext} />

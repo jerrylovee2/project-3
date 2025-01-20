@@ -92,7 +92,7 @@ export default function Attractions({ location }: { location: 'kasauli' | 'chail
     <section className="">
 
       <div className="w-full h-24 bg-[#2FAF5A] mt-5 mb-5 flex items-center justify-center">
-        <h2 className="text-white text-xl font-bold">Close-by Attractions</h2>
+        <h2 className="text-white text-4xl font-title">Close-by Attractions</h2>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
