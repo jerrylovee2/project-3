@@ -19,7 +19,7 @@ export default function HotelPreview() {
     <div className="w-full max-w-7xl mx-auto px-4 py-12 space-y-20">
       {/* Testimonials Section */}
       <section>
-        <h2 className="text-center text-4xl font-serif text-[#2E8B57] mb-12 relative">
+        <h2 className="text-center text-4xl font-title text-[#2E8B57] mb-12 relative">
           <span className="relative px-8">
             Hear from Our Guests
             <div className="absolute left-0 right-0 top-1/2 -z-10 h-px bg-[#2E8B57]" />
@@ -67,7 +67,7 @@ export default function HotelPreview() {
 
       {/* Scenic Preview Section */}
       <section>
-        <h2 className="text-center text-4xl font-serif text-[#2E8B57] mb-8 relative">
+        <h2 className="text-center text-4xl font-title text-[#2E8B57] mb-8 relative">
           <span className="relative px-8">
             Our Scenic Preview
             <div className="absolute left-0 right-0 top-1/2 -z-10 h-px bg-[#2E8B57]" />
@@ -97,7 +97,7 @@ export default function HotelPreview() {
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <h3 className="absolute bottom-4 left-4 text-white text-xl font-serif">
+                    <h3 className="absolute bottom-4 left-4 text-white text-xl font-title">
                       {preview.title}
                     </h3>
                   </div>

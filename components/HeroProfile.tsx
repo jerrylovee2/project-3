@@ -5,7 +5,7 @@ export default function HeroProfile() {
     <section className="relative py-16 ">
       <div className=" mx-auto text-center">
         <DecorativeLine>
-          <h1 className="text-xl sm:text-4xl font-serif text-emerald-700 whitespace-nowrap px-4">
+          <h1 className="text-xl sm:text-4xl font-title text-emerald-700 whitespace-nowrap px-4">
           Escape to Quiet, Comfort, and Beauty in Kasauli
           </h1>
         </DecorativeLine>

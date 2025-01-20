@@ -1,7 +1,7 @@
 export default function TermsAndConditions() {
     return (
         <>
-        <h1 className="text-4xl font-serif text-white text-center py-6 bg-emerald-500 mb-8">
+        <h1 className="text-4xl font-title text-white text-center py-6 bg-emerald-500 mb-8">
         Terms and Conditions
       </h1>
       <div className="max-w-4xl mx-auto px-4 py-8" style={{paddingTop:'20px'}}>

@@ -61,7 +61,7 @@ export default function ThreeCardSlider() {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/50">
-              <h3 className="text-lg font-serif">{rooms[getSlideIndex(-1)].title}</h3>
+              <h3 className="text-lg font-title">{rooms[getSlideIndex(-1)].title}</h3>
               <div className="w-10 h-[1px] bg-white mt-2"></div> {/* White line under the title */}
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function ThreeCardSlider() {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-black/50">
-              <h2 className="text-3xl md:text-4xl font-serif mb-4">{rooms[currentIndex].title}</h2>
+              <h2 className="text-3xl md:text-4xl font-title mb-4">{rooms[currentIndex].title}</h2>
               <div className="w-[60vh] h-[1px] bg-white mt-2"></div> {/* White line under the title */}
               <p className="text-sm md:text-base tracking-wide leading-7 line-height-[1.5] letter-spacing-[5px]">
                 {rooms[currentIndex].description}
@@ -90,7 +90,7 @@ export default function ThreeCardSlider() {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/50">
-              <h3 className="text-lg font-serif">{rooms[getSlideIndex(1)].title}</h3>
+              <h3 className="text-lg font-title">{rooms[getSlideIndex(1)].title}</h3>
               <div className="w-10 h-[1px] bg-white mt-2"></div> {/* White line under the title */}
             </div>
           </Card>

@@ -43,7 +43,7 @@ export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) 
 
         {/* Right side - Text Content */}
         <div className="w-1/2 flex flex-col justify-center">
-          <h2 className="text-sm sm:text-4xl md:text-5xl font-serif italic mb-6">
+          <h2 className="text-sm sm:text-4xl md:text-5xl font-title italic mb-6">
             {prop}
           </h2>
           <p className="text-gray-600 leading-4 text-[10px] sm:text-xl sm:leading-relaxed max-w-lg">

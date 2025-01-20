@@ -47,7 +47,7 @@ export default function ContactForm({prop}: {prop: any}) {
 
         {/* Form Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center p-8">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#2E8B57] mb-12">
+          <h2 className="text-4xl md:text-5xl font-title text-[#2E8B57] mb-12">
             {prop}
           </h2>
 
