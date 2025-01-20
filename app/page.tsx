@@ -1,138 +1,149 @@
 "use client";
 
-import AmenitiesGrid from "@/components/AmenitiesGrid";
-import Testimonials from "@/components/Testimonials";
-import VisualTour from "@/components/VisualTour";
-// import ContactForm from "@/components/ContactForm";
-import Attractions from "@/components/Attractions";
-import ScenicPreview from "@/components/preview";
-import ImageSlider from "@/components/ImageSlider";
-import ContactForm from "@/components/newform";
-import ImageSection from "@/components/Imagesection";
-import HeroSection from "@/components/Herosection";
-import LuxurySection from "@/components/Luxary";
-import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone,Mail } from "lucide-react"; 
-import Navbar1 from "@/components/Navbar1";
+import { Mail, MapPin, Phone } from "lucide-react";
+import NavbarMain from "@/components/Navbarmain";
+import Image from "next/image";
 
-export default function chail() {
+export default function Home() {
   return (
-    <main className="min-h-screen  bg-[#F9FAFB] font-title">
-      <Navbar1 />
+    <>
+    <NavbarMain />
+    <section className="relative h-screen"> <div className="absolute inset-0">
+          <img src="/main1.png"
+            alt="Mountain View" className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0" />
+          </div>
+          <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
 
-      {/* Hero Section */}
-      <section className="relative h-[70vh] pt-16">
-        <div className="absolute inset-0">
-          <img
-            src="/chail1.png"
-            alt="chail View"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0" />
-        </div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
-          Plan. Stay. Explore. 
-          All in One Place
-            <br></br>
-            All Together.
-          </h1>
+            Escape the Ordinary, Find your Peak Moment
+
+            </h1>
           <p className="text-xl md:text-2xl text-center max-w-2xl">
-            
-          </p>
+            Get away from it all and breathe in the mountain air.
+            Your perfect retreat is just a stay away.
+            </p>
         </div>
       </section>
 
-      {/* Welcome Text */}
-      {/* <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-green-600 mb-6">
-            Escape to Quiet, Comfort, and Beauty in chail
-          </h2>
-          <p className="text-gray-700">
-            Set in the tranquil hills of chail, our hotel combines modern luxury with natural beauty.
-            Each stay promises not just accommodation, but an experience where comfort meets stunning
-            mountain vistas. Let us be your gateway to the serene Himalayas.
-          </p>
-        </div>
-      </section> */}
-
-      <HeroSection />
-      
-      <ImageSection 
-        src="/chail2.png"
-        alt="Scenic mountain view from hotel"
-      />
-      
-      <LuxurySection />
-      
-      <ImageSection 
-        src="/chail3.png"
-        alt="Luxury hotel room"
-        showExploreButton
-      />
-   
-      {/* Amenities */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <AmenitiesGrid prop={"Be Our Guest at Hadley Inn"} text={"Enjoy exclusive perks, special discounts, & personalized experiences. Join the Hadley Inn family & make your every stay unforgettable!"}/>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="">
-        <div className=" mx-auto">
-          <Testimonials />
-        </div>
-      </section>
-
-
-      {/* Visual Tour */}
-      {/* <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <VisualTour />
-        </div>
-      </section> */}
-      
-      <ImageSlider location="chail" text="Our Visual Tour"/>
-      
-      {/* Attractions */}
-      <div className="">
-        <Attractions location="chail" />
+      {/* Welcome Section */ }
+  <div className="relative min-h-[600px] mt-10 w-full overflow-hidden">
+    <Image
+      src="/main2.png"
+      alt="Misty forest landscape"
+      fill
+      priority
+      className="object-cover object-center brightness-90"
+    />
+    <div className="relative flex min-h-[600px] items-center justify-center px-4 py-16">
+      <div className="max-w-3xl rounded-[40px] bg-white/60 px-8 py-12 text-center backdrop-blur-sm">
+        <h1 className="mb-6 text-4xl font-semibold text-[#4A8469]">
+          Warm Greetings!
+        </h1>
+        <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-800">
+          Nestled in the mountains, our inn is one of the best hotels in
+          Himachal. It offers a serene escape with breathtaking views, cozy
+          rooms, and exceptional service. Experience relaxation, adventure,
+          and warm hospitality for an unforgettable stay in nature&apos;s embrace.
+        </p>
       </div>
-    
-      <ContactForm prop={"Drop Us a Message!"}/>
+    </div>
+  </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
-              <div className="flex items-center mb-2">
-                <Phone className="h-4 w-4 mr-2" />
-                <p className="font-coopse">+91-809112116, +91-9317017711</p>
-              </div>
-              <div className="flex items-center mb-2">
-                <Mail className="h-4 w-4 mr-2" />
-                <p className="font-coopse">Hadleyinn01@gmail.com</p>
-              </div>
-              <div className="flex items-center mb-2">
-                <MapPin className="h-4 w-4 mr-2" />
-                <p className="font-coopse">Alampur, Chail, Himachal Pradesh 173217</p>
-              </div>
+
+  {/* Locations Section */ }
+  <section className="py-16 bg-gray-50">
+    <div className="mx-auto">
+      <div className="py-12">
+        <div className="flex items-center justify-center gap-6">
+          <div className="h-[1px] flex-1 bg-[#4A8469]" />
+          <h2 className="text-center text-3xl font-semibold text-[#4A8469] md:text-4xl">
+            Two Locations, One Warm Welcome
+          </h2>
+          <div className="h-[1px] flex-1 bg-[#4A8469]" />
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 gap-8">
+        <Link
+          href="/kasauli"
+          className="group relative overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="/main3.png"
+            alt="Kasauli"
+            className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
+          <div className="absolute bottom-0 left-0 p-6 text-white">
+            <h3 className="text-3xl font-bold mb-2 flex items-center gap-2">
+              <MapPin className="h-6 w-6" />
+              Kasauli
+            </h3>
+            <div className="flex items-center justify-center">
+              <p className="text-lg opacity-90 mr-1">Know More</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-right"><path d="M18 8L22 12L18 16" /><path d="M2 12H22" /></svg>
             </div>
-            <div>
-              <h4 className="text-xl font-bold mb-4">Connect</h4>
-              <ul>
+          </div>
+        </Link>
+        <Link
+          href="/chail"
+          className="group relative overflow-hidden rounded-lg shadow-lg"
+        >
+          <img
+            src="/main4.png"
+            alt="Chail"
+            className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
+          <div className="absolute bottom-0 left-0 p-6 text-white">
+            <h3 className="text-3xl font-bold mb-2 flex items-center gap-2">
+              <MapPin className="h-6 w-6" />
+              Chail
+            </h3>
+            <div className="flex items-center justify-center">
+              <p className="text-lg opacity-90 mr-1">Know More</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-right"><path d="M18 8L22 12L18 16" /><path d="M2 12H22" /></svg>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>
+  </section>
+
+  {/* Footer */ }
+  <footer className="bg-gray-900 text-white py-8">
+    <div className="max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+
+          <h4 className="text-xl font-bold mb-4">For Questions or Inquiries</h4>
+          <div className="flex items-center mb-2">
+            <Phone className="h-4 w-4 mr-2" />
+            <p className="font-coopse">+91- 8091112116, +91- 9317017711</p>
+
+          </div>
+          <div className="flex items-center mb-2">
+            <Mail className="h-4 w-4 mr-2" />
+            <p className="font-coopse pl-2">Hadleyinn01@gmail.com</p>
+          </div>
+          <div className="flex items-center mb-2">
+            <MapPin className="h-10 w-10 mr-4" />
+            <p className="font-coopse">Kasauli road, near Modern Dhabha, Kasauli, Dharampur, Himachal Pradesh 173209</p>
+
+          </div>
+        </div>
+        <div>
+          <h4 className="text-xl font-bold mb-4">Connect</h4>
+          <ul>
                 <li className="mb-2">
-                  <a href="https://www.instagram.com/hadleyinncottages?igsh=MWkyam1xYW5oc2Z3Mw==" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/innhadley?igsh=MTdpMmk4NjFyMzZ5YQ==" target="_blank" rel="noopener noreferrer">
                     Instagram
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://www.facebook.com/share/15j5fNqxRP/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/share/18qzgVp1QC/" target="_blank" rel="noopener noreferrer">
                     Facebook
                   </a>
                 </li>
@@ -142,26 +153,25 @@ export default function chail() {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold mb-4">Need Help?</h4>
-              <ul>
-              <li className="mb-2"> <Link href="/privacy">Cancellations and Refund </Link></li>
-              <li className="mb-2"><Link href="/privacy">Terms and Conditions</Link></li>
-                <li>
-                  <Link href="/privacy">
-                    Privacy Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="text-center mt-8 pt-8 border-t border-gray-800">
-            <p>©  2023 TheHakamHari Company All Rights Reserved</p>
-          </div>
         </div>
-      </footer>
-      <a
+        <div>
+          <h4 className="text-xl font-bold mb-4">Need Help?</h4>
+          <ul>
+            <li className="mb-2"> <Link href="/privacy">Cancellations and Refund </Link></li>
+            <li className="mb-2"><Link href="/privacy">Terms and Conditions</Link></li>
+            <li>
+              <Link href="/privacy">Privacy Policy</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="text-center mt-8 pt-8 border-t border-gray-800">
+        <p>©  2023 TheHakamHari Company All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  {/* WhatsApp Floating Icon */ }
+  <a
         href="https://wa.me/+91 809112116"
         target="_blank"
         rel="noopener noreferrer"
@@ -176,6 +186,6 @@ export default function chail() {
           className="w-6 h-6"
         />
       </a>
-    </main>
+  </>
   );
 }
