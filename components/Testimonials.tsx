@@ -119,7 +119,7 @@ export default function TestimonialSlider() {
                       
                       {/* Quote */}
                       <blockquote className="text-center mb-4 text-sm lg:text-lg italic">
-                        "{testimonial.quote.substring(0, 40)}..."
+                        "{testimonial.quote.substring(0, 90)}..."
                       </blockquote>
                       
                       {/* Author */}
