@@ -65,7 +65,7 @@ export default function TestimonialSlider() {
     <div className="bg-[#F9FAFB]">
       <div className="flex items-center justify-center mb-12">
         <div className="w-[50%] h-px bg-green-600 "></div>
-        <h2 className="text-4xl font-title text-green-600">
+        <h2 className=" text-lg sm:text-xl  md:text-2xl  lg:text-4xl font-title text-green-600">
           What People say about us?
         </h2>
         <div className="w-[20%] h-px bg-green-600 "></div>
@@ -132,8 +132,8 @@ export default function TestimonialSlider() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-white border-white bg-white/20" />
-          <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-white border-white bg-white/20" />
+          {/* <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-white border-white bg-white/20" />
+          <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-white border-white bg-white/20" /> */}
         </Carousel>
         
       </div>
