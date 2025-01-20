@@ -73,7 +73,7 @@ export default function Home() {
           <img
             src="/main3.png"
             alt="Kasauli"
-            className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-[700px] object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
           <div className="absolute bottom-0 left-0 p-6 text-white">
@@ -94,7 +94,7 @@ export default function Home() {
           <img
             src="/main4.png"
             alt="Chail"
-            className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-[700px] object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
           <div className="absolute bottom-0 left-0 p-6 text-white">
@@ -148,7 +148,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/+91 809112116" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/+91809111211616" target="_blank" rel="noopener noreferrer">
                     WhatsApp
                   </a>
                 </li>
@@ -172,7 +172,7 @@ export default function Home() {
   </footer>
   {/* WhatsApp Floating Icon */ }
   <a
-        href="https://wa.me/+91 809112116"
+        href="https://wa.me/+918091112116"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
