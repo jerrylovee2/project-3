@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative py-16 ">
       <div className=" mx-auto text-center">
         <DecorativeLine>
-          <h1 className="text-xl sm:text-4xl font-title text-emerald-700 whitespace-nowrap px-4">
+          <h1 className="text-md sm:text-4xl font-title text-emerald-700 whitespace-nowrap px-4">
             Relax, Recharge, and Reconnect in Chail
           </h1>
         </DecorativeLine>
