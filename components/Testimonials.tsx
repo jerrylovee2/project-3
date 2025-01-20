@@ -345,7 +345,6 @@
 // //     </Card>
 // //   )
 // // }
-
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -412,11 +411,11 @@ export default function TestimonialSlider() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 900);
+      setIsMobile(window.innerWidth < 1200);
     };
 
     if (typeof window !== 'undefined') {
-      setIsMobile(window.innerWidth < 900);
+      setIsMobile(window.innerWidth < 1200);
       window.addEventListener('resize', handleResize);
     }
 
