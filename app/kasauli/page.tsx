@@ -24,7 +24,7 @@ export default function Kasauli() {
       <Navbar />
     
       {/* Hero Section */}
-      <section className="relative h-[70vh] pt-16">
+      <section className="relative h-[60vh] pt-16">
         <div className="absolute inset-0">
           <img
             src="/kasaul1.png"
@@ -82,7 +82,7 @@ export default function Kasauli() {
       {/* Amenities */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <AmenitiesGrid prop={"Discover Hadley Inn Hospitality"} text={"Experience the warmth of Hadley Inn Hospitality, where every detail is  crafted for your comfort and joy. Discover unmatched service, cozy stays, and a welcoming atmosphere that feels like home."}/>
+          <AmenitiesGrid prop={"Discover Hadley Inn  Hospitality"} text={"Experience the warmth of Hadley Inn Hospitality, where every detail is  crafted for your comfort and joy. Discover unmatched service, cozy stays, and a welcoming atmosphere that feels like home."}/>
         </div>
       </section>
 

@@ -25,9 +25,7 @@ export default function Kasaulilux() {
       <section className="px-4 pt-10 pb-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <p className="mt-6 text-lg text-gray-600 font-title">
-            Check our property and discover the unique charm and features of our space. From stunning views to exceptional amenities,
-            explore what makes our property special. Take a closer look and see how our property meets your needs and aspirations.
-          </p>
+          Escape to a luxurious and cozy retreat where comfort meets elegance, offering a perfect blend of serenity and style. Indulge in a haven of warmth and luxury, designed to relax your soul and elevate your stay.</p>
         </div>
       </section>
     </div>

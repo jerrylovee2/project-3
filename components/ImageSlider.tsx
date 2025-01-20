@@ -88,22 +88,25 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
   };
 
   return (
-    <div className="h-[700px] md:h-[800px] bg-[#F9FAFB] px-4 py-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-4xl font-title text-green-700">{text}</h1>
-          <div className="flex gap-3">
+    <div className="h-[700px] md:h-[800px] bg-[#F9FAFB]   py-16">
+        <div className="flex justify-between items-center mb-8 relative">
+        <div className="absolute left-[20%] transform -translate-x-1/2 top-[-4vh]  lg:top-[-8vh] w-0.5 h-8 md:h-10 lg:h-16 bg-green-700" />
+          <h1 className="text-lg  md:text-4xl left-[20%] transform -translate-x-1/2 bg-[#F9FAFB] mx-2 z-50 relative font-title text-green-700">{text}</h1>
+          <div className="flex gap-3 absolute bg-[#F9FAFB] z-50  left-[85%] top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <NavigationButton direction="prev" onClick={handlePrevious} />
             <NavigationButton direction="next" onClick={handleNext} />
           </div>
+          <div className="w-full h-px bg-green-700 absolute top-1/2 left-0"></div>
         </div>
+      <div className="max-w-7xl mx-auto">
+      
 
         <p className="text-gray-600 mb-12 max-w-2xl">
           Take a glimpse into our world through our visual tour, showcasing stunning views and unforgettable experiences.
           Explore the charm, comfort, and beauty that await you!
         </p>
         
-        <div className="flex items-center justify-center gap-2 sm:gap-6">
+        <div className="flex items-center justify-center gap-2  px-8 md:px-0 sm:gap-6">
           {isMobile ? (
             <Carousel 
               className="w-full"
