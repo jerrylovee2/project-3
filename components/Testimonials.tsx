@@ -436,13 +436,19 @@ export default function TestimonialSlider() {
 
   return (
     <div className="bg-[#F9FAFB]">
-      <div className="flex items-center justify-center mb-12">
+      {/* <div className="flex items-center justify-center mb-12">
         <div className="w-[50%] h-px  bg-emerald-600"></div>
         <h2 className="text-lg md:text-4xl font-title text-emerald-600">
           What People say about us?
         </h2>
         <div className="w-[20%] h-px bg-green-600"></div>
-      </div>
+      </div> */}
+       <div className="flex items-center mb-8 relative">
+          <div className="w-full h-px bg-green-700 absolute top-1/2 left-0"></div>
+          <h1 className="text-lg  left-[30%] sm:left-[60%] float-right md:text-4xl bg-[#F9FAFB] mx-2 z-50 relative font-title text-green-700">
+          What People Say about us?
+          </h1>
+        </div>
       
       <div className="relative w-[90%] mx-auto bg-[#F9FAFB]">
         {isMobile ? (
