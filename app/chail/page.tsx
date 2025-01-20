@@ -22,7 +22,7 @@ export default function chail() {
       <Navbar1 />
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] pt-16">
+      <section className="relative h-[100vh] pt-16">
         <div className="absolute inset-0">
           <img
             src="/chail1.png"

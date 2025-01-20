@@ -24,7 +24,7 @@ export default function Kasauli() {
       <Navbar />
     
       {/* Hero Section */}
-      <section className="relative h-[70vh] pt-16">
+      <section className="relative h-[100vh] pt-16">
         <div className="absolute inset-0">
           <img
             src="/kasaul1.png"
