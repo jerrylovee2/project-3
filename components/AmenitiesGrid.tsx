@@ -2,15 +2,15 @@ import { Wifi, Car, PawPrint, Utensils, Home, Bath, ChefHat, Coffee, Gamepad2 } 
 
 export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) {
   const amenities = [
-    { icon: <Wifi strokeWidth={'3px'} className="w-6 h-6" />, label: "Free Wi-Fi" },
-    { icon: <Car  strokeWidth={'3px'}  className="w-6 h-6" />, label: "Free Parking" },
-    { icon: <PawPrint  strokeWidth={'3px'}  className="w-6 h-6" />, label: "Pet-friendly" },
-    { icon: <Utensils  strokeWidth={'3px'}  className="w-6 h-6" />, label: "BBQ" },
-    { icon: <Home   strokeWidth={'3px'} className="w-6 h-6" />, label: "Terrace/ Balcony" },
-    { icon: <Bath strokeWidth={'3px'}  className="w-6 h-6" />, label: "Housekeeping" },
-    { icon: <ChefHat  strokeWidth={'3px'}  className="w-6 h-6" />, label: "in-room dinning" },
-    { icon: <Coffee strokeWidth={'3px'}  className="w-6 h-6" />, label: "Breakfast" },
-    { icon: <Gamepad2 strokeWidth={'3px'}  className="w-6 h-6" />, label: "Outdoor activities/Trekking" },
+    { icon: <Wifi strokeWidth={'2px'} className="w-8 h-8" />, label: "Free Wi-Fi" },
+    { icon: <Car  strokeWidth={'2px'}  className="w-8 h-8" />, label: "Free Parking" },
+    { icon: <PawPrint  strokeWidth={'2px'}  className="w-8 h-8" />, label: "Pet-friendly" },
+    { icon: <Utensils  strokeWidth={'2px'}  className="w-8 h-8" />, label: "BBQ" },
+    { icon: <Home   strokeWidth={'2px'} className="w-8 h-8" />, label: "Terrace/ Balcony" },
+    { icon: <Bath strokeWidth={'2px'}  className="w-8 h-8" />, label: "Housekeeping" },
+    { icon: <ChefHat  strokeWidth={'2px'}  className="w-8 h-8" />, label: "in-room dinning" },
+    { icon: <Coffee strokeWidth={'2px'}  className="w-8 h-8" />, label: "Breakfast" },
+    { icon: <Gamepad2 strokeWidth={'2px'}  className="w-8 h-8" />, label: "Outdoor activities/Trekking" },
   ]
 
   return (
