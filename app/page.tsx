@@ -71,7 +71,7 @@ export default function Home() {
           className="group relative overflow-hidden rounded-lg shadow-lg"
         >
           <img
-            src="/main3.png"
+            src="/output.jpg"
             alt="Kasauli"
             className="w-full h-[700px] object-cover transition-transform duration-300 group-hover:scale-105"
           />
@@ -92,7 +92,7 @@ export default function Home() {
           className="group relative overflow-hidden rounded-lg shadow-lg"
         >
           <img
-            src="/main4.png"
+            src="/chail.jpg"
             alt="Chail"
             className="w-full h-[700px] object-cover transition-transform duration-300 group-hover:scale-105"
           />
