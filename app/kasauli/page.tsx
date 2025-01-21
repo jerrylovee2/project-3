@@ -27,7 +27,7 @@ export default function Kasauli() {
       <section className="relative h-[100vh] pt-16">
         <div className="absolute inset-0">
           <img
-            src="/kasaul1.png"
+            src="/output.jpg"
             alt="Kasauli View"
             className="w-full h-full object-cover"
           />

@@ -10,7 +10,7 @@ export default function Home() {
     <>
     <NavbarMain />
     <section className="relative h-screen"> <div className="absolute inset-0">
-          <img src="/main1.png"
+          <img src="/chail1.png"
             alt="Mountain View" className="w-full h-full object-cover"
             />
             <div className="absolute inset-0" />

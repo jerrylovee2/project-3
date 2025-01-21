@@ -470,7 +470,7 @@ export default function TestimonialSlider() {
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-500 hover:scale-110"
                         style={{ backgroundImage: `url(${testimonial.background})` }}
                       >
-                        <div className="absolute inset-0 bg-black/60" />
+                        <div className="absolute inset-0 " />
                       </div>
                       
                       <CardContent className="relative p-8 h-full flex flex-col items-center justify-center text-white">

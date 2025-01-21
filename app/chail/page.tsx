@@ -25,7 +25,7 @@ export default function chail() {
       <section className="relative h-[100vh] pt-16">
         <div className="absolute inset-0">
           <img
-            src="/chail1.png"
+            src="/chail.jpg"
             alt="chail View"
             className="w-full h-full object-cover"
           />

@@ -2,15 +2,15 @@ import { Wifi, Car, PawPrint, Utensils, Home, Bath, ChefHat, Coffee, Gamepad2 } 
 
 export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) {
   const amenities = [
-    { icon: <Wifi className="w-6 h-6" />, label: "Free Wi-Fi" },
-    { icon: <Car className="w-6 h-6" />, label: "Free Parking" },
-    { icon: <PawPrint className="w-6 h-6" />, label: "Pet-friendly" },
-    { icon: <Utensils className="w-6 h-6" />, label: "BBQ" },
-    { icon: <Home className="w-6 h-6" />, label: "Terrace/ Balcony" },
-    { icon: <Bath className="w-6 h-6" />, label: "Housekeeping" },
-    { icon: <ChefHat className="w-6 h-6" />, label: "Kitchen" },
-    { icon: <Coffee className="w-6 h-6" />, label: "Breakfast" },
-    { icon: <Gamepad2 className="w-6 h-6" />, label: "Games/ Puzzles" },
+    { icon: <Wifi strokeWidth={'3px'} className="w-6 h-6" />, label: "Free Wi-Fi" },
+    { icon: <Car  strokeWidth={'3px'}  className="w-6 h-6" />, label: "Free Parking" },
+    { icon: <PawPrint  strokeWidth={'3px'}  className="w-6 h-6" />, label: "Pet-friendly" },
+    { icon: <Utensils  strokeWidth={'3px'}  className="w-6 h-6" />, label: "BBQ" },
+    { icon: <Home   strokeWidth={'3px'} className="w-6 h-6" />, label: "Terrace/ Balcony" },
+    { icon: <Bath strokeWidth={'3px'}  className="w-6 h-6" />, label: "Housekeeping" },
+    { icon: <ChefHat  strokeWidth={'3px'}  className="w-6 h-6" />, label: "in-room dinning" },
+    { icon: <Coffee strokeWidth={'3px'}  className="w-6 h-6" />, label: "Breakfast" },
+    { icon: <Gamepad2 strokeWidth={'3px'}  className="w-6 h-6" />, label: "Outdoor activities/Trekking" },
   ]
 
   return (
@@ -24,7 +24,7 @@ export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) 
                 key={index}
                 className="flex flex-col items-center justify-center text-center p-6 relative"
               >
-                <div className="text-gray-700 mb-2">{amenity.icon}</div>
+                <div className="text-gray-700 mb-2 font-bold">{amenity.icon}</div>
                 <span className="text-[6px] sm:text-sm text-gray-600">{amenity.label}</span>
                 
                 {/* Vertical lines except for rightmost items */}
