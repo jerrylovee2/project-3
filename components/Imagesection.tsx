@@ -18,9 +18,9 @@ export default function ImageSection({ src, alt, showExploreButton }: ImageSecti
       />
       {showExploreButton && (
         <div className="absolute bottom-[-25px] left-1/2 transform -translate-x-1/2">
-          <button className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition-colors">
+          {/* <button className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition-colors">
             Explore
-          </button>
+          </button> */}
         </div>
       )}
     </section>
