@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Hadleyinn',
-  description: 'Haddely Inn',
+  description: 'Hadley Inn',
 };
 
 export default function RootLayout({
