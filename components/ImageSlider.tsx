@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ImageCard from './ImageCard';
 import NavigationButton from './NavigationButton';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { title } from 'process';
 
 
 
@@ -9,54 +10,85 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
   const slides = location === 'kasauli' ? [
     {
       id: 1,
-      title: "Rooms",
-      image: "/h4.png"
+      title: "Premium Room",
+      image: "/change6.jpg"
     },
     {
       id: 2,
-      title: "Leisures",
-      image: "/h5.png"
+      title: "Exteriors",
+      image: "/change4.jpg"
     },
     {
       id: 3,
-      title: "Live Music",
-      image: "/h1.png"
+      title: "Joy",
+      image: "/change7.jpg"
     },
     {
       id: 4,
-      title: "Terrace",
-      image: "/h2.png"
+      title: "Site-seeing Views",
+      image: "/change2.jpg"
     },
     {
       id: 5,
       title: "Sunrise / Sunset",
-      image: "/h3.png"
+      image: "/change1.jpg"
+    },
+    {
+      id: 6,
+      title: "Terrace",
+      image: "/h2.png"
+
+    },
+    {
+      id: 7,
+      title: "Leisures",
+      image: "/change5.jpg"
+    },
+    {
+      id:8,
+      title:"Live music",
+      image:"/h1.png"
     },
   ] : [
     {
       id: 1,
-      title: "Rooms",
-      image: "/visual1.png"
+      title: "Premium Room",
+      image: "/change6.jpg"
     },
     {
       id: 2,
       title: "Snowfall",
-      image: "/visual2.png"
+      image: "/snow.jpg"
     },
     {
       id: 3,
-      title: "Serenic Views",
-      image: "/visual3.png"
+      title: "Amazing Views",
+      image: "/cherry.jpg"
     },
     {
       id: 4,
-      title: "Exteriors",
-      image: "/visual4.png"
+      title: "Sitting Area",
+      image: "/more.jpg"
     },
     {
       id: 5,
       title: "Sunrise/Sunsets",
-      image: "/visual5.png"
+      image: "/change1.jpg"
+    },
+    {
+      id:6,
+       title: "Serenic Views",
+      image: "/change8.jpg"
+    },
+    {
+      id: 7,
+      title: "Green",
+      image: "/change2.jpg"
+    },
+    {
+      id:8,
+      title:"Exteriors",
+      image:"/change4.jpg",
     }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
