@@ -11,84 +11,123 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
     {
       id: 1,
       title: "Premium Room",
-      image: "/change6.jpg"
+      image: "/kasual/k1.jpg"
     },
     {
       id: 2,
       title: "Exteriors",
-      image: "/change4.jpg"
+      image: "/kasual/k2.jpg"
     },
     {
       id: 3,
       title: "Joy",
-      image: "/change7.jpg"
+      image: "/kasual/k3.jpg"
     },
     {
       id: 4,
       title: "Site-seeing Views",
-      image: "/change2.jpg"
+      image: "/kasual/k4.jpg"
     },
     {
       id: 5,
       title: "Sunrise / Sunset",
-      image: "/change1.jpg"
+      image: "/kasual/k5.jpg"
     },
     {
       id: 6,
       title: "Terrace",
-      image: "/h2.png"
-
+      image: "/kasual/k6.png"
     },
     {
       id: 7,
       title: "Leisures",
-      image: "/change5.jpg"
+      image: "/kasual/k7.png"
     },
     {
-      id:8,
-      title:"Live music",
-      image:"/h1.png"
+      id: 8,
+      title: "Live music",
+      image: "/kasual/k8.png"
     },
+    {
+      id: 9,
+      title: "Dining",
+      image: "/kasual/k9.jpg"
+    },
+    {
+      id: 10,
+      title: "Fitness",
+      image: "/kasual/k10.jpg"
+    },
+    {
+      id: 11,
+      title: "Spa",
+      image: "/kasual/k11.jpg"
+    },
+    // {
+    //   id: 12,
+    //   title: "Garden",
+    //   image: "/kasual/k12.jpg"
+    // },
   ] : [
     {
       id: 1,
       title: "Premium Room",
-      image: "/change6.jpg"
+      image: "/chail/c1.jpg"
     },
     {
       id: 2,
       title: "Snowfall",
-      image: "/snow.jpg"
+      image: "/chail/c2.jpg"
     },
     {
       id: 3,
       title: "Amazing Views",
-      image: "/cherry.jpg"
+      image: "/chail/c3.jpg"
     },
     {
       id: 4,
       title: "Sitting Area",
-      image: "/more.jpg"
+      image: "/chail/c4.jpg"
     },
     {
       id: 5,
       title: "Sunrise/Sunsets",
-      image: "/change1.jpg"
+      image: "/chail/c5.jpg"
     },
     {
-      id:6,
-       title: "Serenic Views",
-      image: "/change8.jpg"
+      id: 6,
+      title: "Serenic Views",
+      image: "/chail/c6.jpg"
     },
     {
       id: 7,
       title: "Green",
-      image: "/change2.jpg"
+      image: "/chail/c7.jpg"
     },
     {
-      id:8,
-      title:"Exteriors",
-      image:"/change4.jpg",
+      id: 8,
+      title: "Exteriors",
+      image: "/chail/c8.jpg"
+    },
+    {
+      id: 9,
+      title: "Dining",
+      image: "/chail/c9.jpg"
+    },
+    {
+      id: 10,
+      title: "Fitness",
+      image: "/chail/c10.jpg"
+    },
+    {
+      id: 11,
+      title: "Spa",
+      image: "/chail/c11.jpg"
+    },
+    {
+      id: 12,
+      title: "Garden",
+      image: "/chail/c12.jpg"
     }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

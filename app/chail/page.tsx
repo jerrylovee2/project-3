@@ -68,7 +68,7 @@ export default function chail() {
       <LuxurySection />
       
       <ImageSection 
-        src="/chail3.png"
+        src="/prem.jpg"
         alt="Luxury hotel room"
         showExploreButton
       />
