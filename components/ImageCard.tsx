@@ -21,7 +21,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ title, image, size }) => {
         className="w-full h-full object-cover rounded-lg"
       />
       <div className="absolute inset-x-0 bottom-10 bg-gradient-to-t to-transparent p-4 rounded-b-lg">
-        <h3 className="text-white text-xl font-semibold">{title}</h3>
+        {/* <h3 className="text-white text-xl font-semibold">{title}</h3> */}
       </div>
     </div>
   );

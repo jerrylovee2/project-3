@@ -1,4 +1,4 @@
-import { Wifi, Car, PawPrint, Utensils, Home, Bath, ChefHat, Coffee, Gamepad2 } from 'lucide-react'
+import { Wifi, Car, PawPrint, Utensils, Home, Bath, ChefHat, Coffee, TentTree } from 'lucide-react'
 
 export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) {
   const amenities = [
@@ -8,9 +8,9 @@ export default function AmenitiesGrid({ prop, text }: { prop: any, text: any }) 
     { icon: <Utensils  strokeWidth={'2px'}  className="w-8 h-8" />, label: "BBQ" },
     { icon: <Home   strokeWidth={'2px'} className="w-8 h-8" />, label: "Terrace/ Balcony" },
     { icon: <Bath strokeWidth={'2px'}  className="w-8 h-8" />, label: "Housekeeping" },
-    { icon: <ChefHat  strokeWidth={'2px'}  className="w-8 h-8" />, label: "in-room dinning" },
+    { icon: <ChefHat  strokeWidth={'2px'}  className="w-8 h-8" />, label: "In-room dinning" },
     { icon: <Coffee strokeWidth={'2px'}  className="w-8 h-8" />, label: "Breakfast" },
-    { icon: <Gamepad2 strokeWidth={'2px'}  className="w-8 h-8" />, label: "Outdoor activities/Trekking" },
+    { icon: <TentTree strokeWidth={'2px'}  className="w-8 h-8" />, label: "Outdoor activities/Trekking" },
   ]
 
   return (

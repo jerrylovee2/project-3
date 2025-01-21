@@ -116,7 +116,7 @@ export default function chail() {
               </div>
               <div className="flex items-center mb-2">
                 <Mail className="h-4 w-4 mr-2" />
-                <p className="font-coopse">Hadleyinn01@gmail.com</p>
+                <p className="font-coopse"> hadleyinn1@gmail.com</p>
               </div>
               <div className="flex items-center mb-2">
                 <MapPin className="h-4 w-4 mr-2" />

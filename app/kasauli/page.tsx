@@ -122,7 +122,7 @@ export default function Kasauli() {
               </div>
               <div className="flex items-center mb-2">
                 <Mail className="h-4 w-4 mr2" />
-                <p className="font-coopse pl-2"> Hadleyinn01@gmail.com</p>
+                <p className="font-coopse pl-2"> hadleyinn1@gmail.com</p>
               </div>
               <div className="flex items-center mb-2">
                 <MapPin className="h-4 w-4 mr-2" />

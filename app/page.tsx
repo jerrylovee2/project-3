@@ -73,7 +73,7 @@ export default function Home() {
           <img
             src="/output.jpg"
             alt="Kasauli"
-            className="w-full h-[700px] object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-[100vh] object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
           <div className="absolute bottom-0 left-0 p-6 text-white">
@@ -94,7 +94,7 @@ export default function Home() {
           <img
             src="/chail.jpg"
             alt="Chail"
-            className="w-full h-[700px] object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-[100vh] object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t to-transparent" />
           <div className="absolute bottom-0 left-0 p-6 text-white">
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div className="flex items-center mb-2">
             <Mail className="h-4 w-4 mr-2" />
-            <p className="font-coopse pl-2">Hadleyinn01@gmail.com</p>
+            <p className="font-coopse pl-2"> hadleyinn1@gmail.com</p>
           </div>
           <div className="flex items-center mb-2">
             <MapPin className="h-10 w-10 mr-4" />
