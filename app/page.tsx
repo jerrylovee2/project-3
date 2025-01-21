@@ -166,7 +166,7 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center mt-8 pt-8 border-t border-gray-800">
-        <p>©  2023 TheHakamHari Company All Rights Reserved</p>
+        <p>©  2025 TheHakamHari Company All Rights Reserved</p>
       </div>
     </div>
   </footer>

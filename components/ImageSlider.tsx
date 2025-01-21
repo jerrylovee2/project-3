@@ -97,7 +97,7 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
     {
       id: 6,
       title: "Serenic Views",
-      image: "/chail/c6.jpg"
+      image: "/chail/c1.jpg"
     },
     {
       id: 7,
