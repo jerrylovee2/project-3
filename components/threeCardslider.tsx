@@ -10,13 +10,13 @@ const rooms = [
     id: 1,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/p2.png"
+    image: "/super.jpg"
   },
   {
     id: 2,
     title: "Deluxe Mountain View",
     description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/p1.png"
+    image: "/remove.jpg"
   },
   {
     id: 3,
