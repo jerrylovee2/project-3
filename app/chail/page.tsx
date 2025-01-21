@@ -105,7 +105,7 @@ export default function chail() {
       <ContactForm prop={"Drop Us a Message!"}/>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-black text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

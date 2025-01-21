@@ -92,7 +92,7 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
         <div className="flex justify-between items-center mb-8 relative">
         <div className="absolute left-[20%] transform -translate-x-1/2 top-[-4vh]  lg:top-[-8vh] w-0.5 h-8 md:h-10 lg:h-16 bg-green-700" />
           <h1 className="text-lg  md:text-4xl left-[20%] transform -translate-x-1/2 bg-[#F9FAFB] mx-2 z-50 relative font-title text-green-700">{text}</h1>
-          <div className="flex gap-3 absolute bg-[#F9FAFB] z-50  left-[85%] top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="hidden sm:flex gap-3 absolute bg-[#F9FAFB] z-50  left-[85%] top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <NavigationButton direction="prev" onClick={handlePrevious} />
             <NavigationButton direction="next" onClick={handleNext} />
           </div>
