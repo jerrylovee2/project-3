@@ -71,11 +71,6 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
     {
       id: 13,
       title: "Garden",
-      image: "/slider2.jpg"
-    },
-    {
-      id: 14,
-      title: "Garden",
       image: "/slider3.jpg"
     },
   ] : [
@@ -143,6 +138,21 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
       id: 13,
       title: "Garden",
       image: "1.jpg"
+    },
+    {
+      id: 13,
+      title: "Garden",
+      image: "chail1.jpg"
+    },
+    {
+      id: 14,
+      title: "Garden",
+      image: "chail2.jpg"
+    },
+    {
+      id: 15,
+      title: "Garde",
+      image: "chaill3.jpg"
     }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
