@@ -15,6 +15,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone,Mail } from "lucide-react"; 
 import Navbar1 from "@/components/Navbar1";
+import Slider from "@/components/Slider";
+
 
 export default function chail() {
   return (
@@ -67,12 +69,13 @@ export default function chail() {
       
       <LuxurySection />
       
-      <ImageSection 
+      {/* <ImageSection 
         src="/prem.jpg"
         alt="Luxury hotel room"
         showExploreButton
       />
-   
+    */}
+      <Slider/>
       {/* Amenities */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">

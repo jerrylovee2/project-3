@@ -10,19 +10,19 @@ const rooms = [
     id: 1,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/super.jpg"
+    image: "/super.jpeg"
   },
   {
     id: 2,
-    title: "Deluxe Mountain View",
-    description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/remove.jpg"
+    title: "Premium Room",
+    description: "Experience breathtaking mountain views from our Premium rooms. Perfect for nature lovers and peaceful retreats.",
+    image: "/premium.jpeg"
   },
   {
     id: 3,
-    title: "Deluxe Rooms without Balcony",
+    title: "Deluxe Rooms",
     description: "Indulge in the spacious luxury of our deluxe rooms, complete with premium amenities and superior comfort.",
-    image: "/p3.png"
+    image: "/p3.jpeg"
   }
 ]
 
@@ -62,7 +62,7 @@ export default function ThreeCardSlider() {
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/50">
               <h3 className="text-lg font-title">{rooms[getSlideIndex(-1)].title}</h3>
-              <div className="w-10 h-[1px] bg-white mt-2"></div> {/* White line under the title */}
+              <div className="w-10 h-[1px] bg-white mt-2"></div> 
             </div>
           </Card>
 
@@ -74,11 +74,11 @@ export default function ThreeCardSlider() {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-black/50">
-              <h2 className="text-3xl md:text-4xl font-title mb-4">{rooms[currentIndex].title}</h2>
-              <div className="w-[60vh] h-[1px] bg-white mt-2"></div> {/* White line under the title */}
-              <p className="text-sm md:text-base tracking-wide leading-7 line-height-[1.5] letter-spacing-[5px]">
+              <h2 className="text-3xl md:text-4xl font-title mb-4">{rooms[currentIndex].title}</h2> 
+              <div className="w-[60vh] h-[1px] bg-white mt-2"></div> 
+               <p className="text-sm md:text-base tracking-wide leading-7 line-height-[1.5] letter-spacing-[5px]">
                 {rooms[currentIndex].description}
-              </p>
+              </p> 
             </div>
           </Card>
 
@@ -91,7 +91,7 @@ export default function ThreeCardSlider() {
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/50">
               <h3 className="text-lg font-title">{rooms[getSlideIndex(1)].title}</h3>
-              <div className="w-10 h-[1px] bg-white mt-2"></div> {/* White line under the title */}
+              <div className="w-10 h-[1px] bg-white mt-2"></div> 
             </div>
           </Card>
         </div>
