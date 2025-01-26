@@ -63,11 +63,21 @@ const ImageSlider = ({ location, text }: { location: 'kasauli' | 'chail', text: 
       title: "Spa",
       image: "/kasual/k11.jpg"
     },
-    // {
-    //   id: 12,
-    //   title: "Garden",
-    //   image: "/kasual/k12.jpg"
-    // },
+    {
+      id: 12,
+      title: "Garden",
+      image: "/slider1.jpg"
+    },
+    {
+      id: 13,
+      title: "Garden",
+      image: "/slider2.jpg"
+    },
+    {
+      id: 14,
+      title: "Garden",
+      image: "/slider3.jpg"
+    },
   ] : [
     {
       id: 1,

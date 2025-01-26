@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const rooms = [
   {
     id: 1,
-    title: "Super Deluxe with Balcony",
+    title: "Super Deluxe",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
     image: "/super.jpeg"
   },
