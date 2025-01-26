@@ -10,91 +10,91 @@ const rooms = [
     id: 1,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/new/1.jpg"
+    image: "/new/1.JPG"
   },
   {
     id: 2,
     title: "Deluxe Mountain View",
     description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/new/16.jpg"
+    image: "/new/16.JPG"
   },
   {
     id: 3,
     title: "Deluxe Rooms without Balcony",
     description: "Indulge in the spacious luxury of our deluxe rooms, complete with premium amenities and superior comfort.",
-    image: "/new/2.jpg"
+    image: "/new/2.JPG"
   },
   {
     id: 4,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/new/15.jpg"
+    image: "/new/15.JPG"
   },
   {
     id: 5,
     title: "Deluxe Mountain View",
     description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/new/3.jpg"
+    image: "/new/3.JPG"
   },
   {
     id: 6,
     title: "Deluxe Rooms without Balcony",
     description: "Indulge in the spacious luxury of our deluxe rooms, complete with premium amenities and superior comfort.",
-    image: "/new/14.jpg"
+    image: "/new/14.JPG"
   },
   {
     id: 7,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/new/4.jpg"
+    image: "/new/4.JPG"
   },
   {
     id: 8,
     title: "Deluxe Mountain View",
     description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/new/13.jpg"
+    image: "/new/13.JPG"
   },
   {
     id: 9,
     title: "Deluxe Rooms without Balcony",
     description: "Indulge in the spacious luxury of our deluxe rooms, complete with premium amenities and superior comfort.",
-    image: "/new/5.jpg"
+    image: "/new/5.JPG"
   },
   {
     id: 10,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/new/12.jpg"
+    image: "/new/12.JPG"
   },
   {
     id: 11,
     title: "Deluxe Mountain View",
     description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/new/6.jpg"
+    image: "/new/6.JPG"
   },
   {
     id: 12,
     title: "Deluxe Rooms without Balcony",
     description: "Indulge in the spacious luxury of our deluxe rooms, complete with premium amenities and superior comfort.",
-    image: "/new/11.jpg"
+    image: "/new/11.JPG"
   },
   {
     id: 13,
     title: "Super Deluxe with Balcony",
     description: "Enjoy the luxury of our premium rooms, each featuring a private balcony with stunning views. Relax in comfort and style.",
-    image: "/new/7.jpg"
+    image: "/new/7.JPG"
   },
   {
     id: 14,
     title: "Deluxe Mountain View",
     description: "Experience breathtaking mountain views from our deluxe rooms. Perfect for nature lovers and peaceful retreats.",
-    image: "/new/10.jpg"
+    image: "/new/10.JPG"
   },
   {
     id: 15,
     title: "Deluxe Rooms without Balcony",
     description: "Indulge in the spacious luxury of our deluxe rooms, complete with premium amenities and superior comfort.",
-    image: "/new/8.jpg"
+    image: "/new/8.JPG"
   }
 ]
 
